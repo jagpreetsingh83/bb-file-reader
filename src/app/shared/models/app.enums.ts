@@ -1,4 +1,5 @@
 export const enum AppRoutes {
   ANY = '**',
-  ERROR = 'error'
+  ERROR = 'error',
+  FILE_IMPORT = 'file-import'
 }
