@@ -5,6 +5,8 @@ import { CoreModule } from '@core/core.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { EffectsModule } from '@ngrx/effects';
+import { AppEffects } from './app.effects';
 
 @NgModule({
   declarations: [AppComponent],
@@ -12,7 +14,8 @@ import { AppComponent } from './app.component';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    CoreModule
+    CoreModule,
+    EffectsModule.forRoot([AppEffects])
   ],
   bootstrap: [AppComponent]
 })
