@@ -14,8 +14,7 @@ import { reducers } from './store/reducers';
     ErrorHandlerModule.forRoot(),
     StoreModule.forRoot(reducers, {
       runtimeChecks: {
-        strictStateImmutability: true,
-        strictActionImmutability: true
+        strictStateImmutability: true
       }
     }),
     EffectsModule.forRoot([]),

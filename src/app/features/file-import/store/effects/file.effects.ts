@@ -18,7 +18,7 @@ export class FileEffects {
       ),
       switchMap(({ payload: { file } }) =>
         this.reader.read(file).pipe(
-          tap(data => this.logger.debug('Read', data)),
+          tap(data => this.logger.debug('Read', data.length)),
           map(data => this.adapter.getFileRecords(data)),
           map(records =>
             FileActions.readFileSuccess({

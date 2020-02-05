@@ -1,31 +1,42 @@
-import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input, OnInit, ViewChild } from '@angular/core';
+import { MatSort, MatTableDataSource } from '@angular/material';
 import { MatPaginator } from '@angular/material/paginator';
-import { MatSort } from '@angular/material/sort';
-import { MatTable } from '@angular/material/table';
-
-import { TableDataSource, TableItem } from './table-datasource';
+import { BaseComponent } from '@app/shared/components/base/base.component';
+import { FileRecord } from '@file/models/file-import-models';
+import { NGXLogger } from 'ngx-logger';
+import { Observable } from 'rxjs';
+import { takeUntil } from 'rxjs/operators';
 
 @Component({
   selector: 'bb-table',
   templateUrl: './table.component.html',
-  styleUrls: ['./table.component.scss']
+  styleUrls: ['./table.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class TableComponent implements AfterViewInit, OnInit {
-  @ViewChild(MatPaginator, { static: false }) paginator: MatPaginator;
-  @ViewChild(MatSort, { static: false }) sort: MatSort;
-  @ViewChild(MatTable, { static: false }) table: MatTable<TableItem>;
-  dataSource: TableDataSource;
+export class TableComponent extends BaseComponent implements OnInit {
+  @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
+  @ViewChild(MatSort, { static: true }) sort: MatSort;
 
-  /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
-  displayedColumns = ['id', 'name'];
+  @Input() records: Observable<FileRecord[]>;
 
-  ngOnInit() {
-    this.dataSource = new TableDataSource();
+  dataSource: MatTableDataSource<FileRecord>;
+  displayedColumns = ['name', 'surname', 'issueCount', 'dob'];
+
+  noResults: boolean;
+
+  constructor(private logger: NGXLogger) {
+    super();
   }
 
-  ngAfterViewInit() {
-    this.dataSource.sort = this.sort;
-    this.dataSource.paginator = this.paginator;
-    this.table.dataSource = this.dataSource;
+  ngOnInit() {
+    this.records.pipe(takeUntil(this.destroyed)).subscribe(records => {
+      this.logger.debug('Creating table with records', records);
+      this.dataSource = new MatTableDataSource<FileRecord>(records);
+      this.noResults = records.length <= 0;
+      if (!this.noResults) {
+        this.dataSource.paginator = this.paginator;
+        this.dataSource.sort = this.sort;
+      }
+    });
   }
 }
