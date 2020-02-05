@@ -1,11 +1,14 @@
 import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { environment } from '@env/environment';
 import { LoggerModule } from 'ngx-logger';
-import { NotFoundComponent } from './error-handler/components/not-found/not-found.component';
+
+import { ErrorHandlerModule } from './error-handler/error-handler.module';
 
 @NgModule({
-  imports: [LoggerModule.forRoot(environment.logging)],
-  declarations: [NotFoundComponent]
+  imports: [
+    LoggerModule.forRoot(environment.logging),
+    ErrorHandlerModule.forRoot()
+  ]
 })
 export class CoreModule {
   constructor(@Optional() @SkipSelf() parentModule: CoreModule) {
