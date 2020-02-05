@@ -1,12 +1,12 @@
 import { ErrorHandler, ModuleWithProviders, NgModule } from '@angular/core';
 import { SharedModule } from 'src/app/shared/shared.module';
 
-import { NotFoundComponent } from './components/not-found/not-found.component';
+import { ErrorComponent } from './components/error/error.component';
 import { ErrorHandlerRoutingModule } from './error-handler-routing.module';
 import { ErrorHandlerService } from './services/error-handler.service';
 
 @NgModule({
-  declarations: [NotFoundComponent],
+  declarations: [ErrorComponent],
   imports: [SharedModule, ErrorHandlerRoutingModule]
 })
 export class ErrorHandlerModule {
