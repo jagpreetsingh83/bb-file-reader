@@ -7,9 +7,10 @@
       <input
         #fileInput
         type="file"
-        (change)="onFileInput($event)"
+        (change)="onFileChange($event)"
+        multiple="false"
         style="display:none;"
-        accept=".au"
+        accept=".csv"
       />
     </button>
     <mat-form-field>
