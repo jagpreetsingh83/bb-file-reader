@@ -1,21 +1,29 @@
+import { FileRecord } from '@file/models/file-import-models';
 import { Action, createReducer, on } from '@ngrx/store';
 
 import * as FileActions from '../actions/file.actions';
 
 export const fileFeatureKey = 'file';
 
-export interface State {}
+export interface FileState {
+  records: FileRecord[];
+}
 
-export const initialState: State = {};
+export const initialState: FileState = {
+  records: []
+};
 
 const fileReducer = createReducer(
   initialState,
 
-  on(FileActions.loadFiles, state => state),
-  on(FileActions.loadFilesSuccess, (state, action) => state),
-  on(FileActions.loadFilesFailure, (state, action) => state)
+  on(FileActions.readFile, state => state),
+  on(FileActions.readFileSuccess, (state, { payload: { records } }) => ({
+    ...state,
+    records
+  })),
+  on(FileActions.readFileFailure, (state, action) => state)
 );
 
-export function reducer(state: State | undefined, action: Action) {
+export function reducer(state: FileState | undefined, action: Action) {
   return fileReducer(state, action);
 }

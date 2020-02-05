@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AppRoutes } from 'src/app/shared/models/app.enums';
+import { AppRoutes } from 'src/app/shared/models/app.models';
 
 import { ErrorComponent } from './components/error/error.component';
 

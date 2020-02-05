@@ -15,9 +15,7 @@ import { reducers } from './store/reducers';
     StoreModule.forRoot(reducers, {
       runtimeChecks: {
         strictStateImmutability: true,
-        strictActionImmutability: true,
-        strictStateSerializability: true,
-        strictActionSerializability: true
+        strictActionImmutability: true
       }
     }),
     EffectsModule.forRoot([]),

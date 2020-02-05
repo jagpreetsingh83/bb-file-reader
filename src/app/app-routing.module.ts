@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { AppRoutes } from './shared/models/app.enums';
+import { AppRoutes } from './shared/models/app.models';
 
 const routes: Routes = [
   { path: '', redirectTo: AppRoutes.FILE_IMPORT, pathMatch: 'full' },

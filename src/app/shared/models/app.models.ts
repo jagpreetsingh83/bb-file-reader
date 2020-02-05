@@ -3,3 +3,7 @@ export const enum AppRoutes {
   ERROR = 'error',
   FILE_IMPORT = 'file-import'
 }
+
+export interface Adapter<T> {
+  adapt(item: any): T;
+}
