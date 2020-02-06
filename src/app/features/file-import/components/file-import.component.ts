@@ -63,8 +63,8 @@ export class FileImportComponent extends BaseComponent implements OnInit {
   onFileChange(evt: any) {
     this.logger.debug('Resetting...');
     this.resetSelection();
-    const { files } = evt.target;
     this.fileStore.readFile(evt.target);
+    const { files } = evt.target;
     this.fileName = files && files.length === 1 && files[0].name;
   }
 

@@ -1,6 +1,7 @@
-<section class="file">
-  <section class="file__toolbar">
-    <div class="file__name" role="alert">
+<main class="file">
+  <aside class="file__toolbar">
+    <section class="file__name">
+      <!-- IMPORT BUTTON -->
       <button mat-raised-button color="primary" (click)="fileInput.click()">
         <span>
           Import
@@ -14,13 +15,12 @@
           accept=".csv"
         />
       </button>
-      <mat-chip-list
-        aria-label="file name of the imported file"
-        *ngIf="fileName"
-      >
-        <mat-chip>{{ fileName }}</mat-chip>
+      <!-- FILE NAME -->
+      <mat-chip-list aria-label="name of the imported file" *ngIf="fileName">
+        <mat-chip role="alert">{{ fileName }}</mat-chip>
       </mat-chip-list>
-    </div>
+    </section>
+    <!-- FILTER -->
     <mat-form-field>
       <input
         [formControl]="issueCountField"
@@ -33,8 +33,9 @@
         &#8804; Issue Count
       </mat-hint>
     </mat-form-field>
-  </section>
+  </aside>
+  <!-- TABLE -->
   <section>
     <bb-table [records]="records$" [isLoading]="loading$"></bb-table>
   </section>
-</section>
+</main>
