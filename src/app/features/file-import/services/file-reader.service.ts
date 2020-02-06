@@ -21,8 +21,13 @@ export class FileReaderService {
       const wsname: string = wb.SheetNames[0];
       const ws: XLSX.WorkSheet = wb.Sheets[wsname];
 
-      /* save data */
-      this.recs.next(XLSX.utils.sheet_to_json(ws, { header: 1 }));
+      /* read data */
+      const recs: AOA = XLSX.utils.sheet_to_json(ws, { header: 1 });
+
+      // remove header row
+      recs.shift();
+
+      this.recs.next(recs);
     };
     reader.readAsBinaryString(target.files[0]);
     return this.recs.asObservable();

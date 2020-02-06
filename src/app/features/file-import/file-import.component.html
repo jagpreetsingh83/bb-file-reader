@@ -14,11 +14,10 @@
       />
     </button>
     <mat-form-field>
-      <input
-        matInput
-        (keyup)="applyFilter($event.target.value)"
-        placeholder="Filter"
-      />
+      <input [formControl]="issueCountField" matInput type="number" placeholder="Filter" aria-label="Enter a value to filter on issue count"/>
+      <mat-hint>
+        &#8804; Issue Count
+      </mat-hint>
     </mat-form-field>
   </section>
   <section>

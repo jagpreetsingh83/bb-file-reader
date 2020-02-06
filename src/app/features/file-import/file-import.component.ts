@@ -1,7 +1,6 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
+import { FormControl } from '@angular/forms';
 
-import { FileRecord } from './models/file-import-models';
 import { FileStoreService } from './services/file-store.service';
 
 @Component({
@@ -11,13 +10,13 @@ import { FileStoreService } from './services/file-store.service';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class FileImportComponent implements OnInit {
-  records$: Observable<FileRecord[]>;
+  issueCountField = new FormControl();
+
+  records$ = this.fileStore.getFilteredRecords(null);
 
   constructor(private fileStore: FileStoreService) {}
 
-  ngOnInit(): void {
-    this.records$ = this.fileStore.getFilteredRecords(null);
-  }
+  ngOnInit(): void {}
 
   onFileChange(evt: any) {
     this.fileStore.readFile(evt.target);
