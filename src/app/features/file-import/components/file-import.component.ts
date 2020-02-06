@@ -1,6 +1,6 @@
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Inject, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
-import { MatSnackBar } from '@angular/material';
+import { MAT_SNACK_BAR_DATA, MatSnackBar } from '@angular/material';
 import { BaseComponent } from '@app/shared/components/base/base.component';
 import { NGXLogger } from 'ngx-logger';
 import { debounceTime, distinctUntilChanged, filter, takeUntil, tap } from 'rxjs/operators';
@@ -25,7 +25,8 @@ export class FileImportComponent extends BaseComponent implements OnInit {
   constructor(
     private fileStore: FileStoreService,
     private logger: NGXLogger,
-    private snackBar: MatSnackBar
+    private snackBar: MatSnackBar,
+    @Inject(MAT_SNACK_BAR_DATA) public config: any
   ) {
     super();
   }
@@ -42,7 +43,7 @@ export class FileImportComponent extends BaseComponent implements OnInit {
         takeUntil(this.destroyed)
       )
       .subscribe(error => {
-        this.snackBar.open(error, 'Error', { duration: 3000 });
+        this.snackBar.open(error, 'Error', this.config);
       });
   }
 
