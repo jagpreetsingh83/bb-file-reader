@@ -1,18 +1,26 @@
 <section class="file">
   <section class="file__toolbar">
-    <button mat-raised-button color="primary" (click)="fileInput.click()">
-      <span>
-        Import
-      </span>
-      <input
-        #fileInput
-        type="file"
-        (change)="onFileChange($event)"
-        multiple="false"
-        style="display:none;"
-        accept=".csv"
-      />
-    </button>
+    <div class="file__name" role="alert">
+      <button mat-raised-button color="primary" (click)="fileInput.click()">
+        <span>
+          Import
+        </span>
+        <input
+          #fileInput
+          type="file"
+          (change)="onFileChange($event)"
+          multiple="false"
+          style="display:none;"
+          accept=".csv"
+        />
+      </button>
+      <mat-chip-list
+        aria-label="file name of the imported file"
+        *ngIf="fileName"
+      >
+        <mat-chip>{{ fileName }}</mat-chip>
+      </mat-chip-list>
+    </div>
     <mat-form-field>
       <input
         [formControl]="issueCountField"

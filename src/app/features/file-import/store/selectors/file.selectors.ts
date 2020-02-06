@@ -13,8 +13,8 @@ export const selectLoading = createSelector(
 
 export const selectFilteredRecords = createSelector(
   selectFileState,
-  (state: fromFile.FileState, props) =>
-    props && props.issueCount
-      ? state.records.filter(r => r.issueCount <= props.issueCount)
+  (state: fromFile.FileState) =>
+    state.issueCount
+      ? state.records.filter(r => r.issueCount <= state.issueCount)
       : state.records
 );

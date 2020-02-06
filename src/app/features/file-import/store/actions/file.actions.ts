@@ -15,3 +15,10 @@ export const readFileFailure = createAction(
   '[File] Load Files Failure',
   props<{ error: any }>()
 );
+
+export const setIssueCount = createAction(
+  '[File] Set Issue Count',
+  props<{ payload: { issueCount: number } }>()
+);
+
+export const reset = createAction('[File] Reset');

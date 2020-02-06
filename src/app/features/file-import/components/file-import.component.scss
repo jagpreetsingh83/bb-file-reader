@@ -1,11 +1,22 @@
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .file {
   width: 80%;
   margin: 3rem auto;
 
   &__toolbar {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
+    @include flex-center();
     margin-bottom: 1rem;
+  }
+
+  &__name {
+    @include flex-center();
+    mat-chip-list {
+      margin-left: 1rem;
+    }
   }
 }

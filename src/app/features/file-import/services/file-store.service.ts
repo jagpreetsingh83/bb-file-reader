@@ -1,18 +1,23 @@
 import { Injectable } from '@angular/core';
-import { FileState, readFile, selectFilteredRecords, selectLoading } from '@file/store';
+import * as FileStore from '@file/store';
 import { Store } from '@ngrx/store';
 
 @Injectable()
 export class FileStoreService {
-  selectLoading$ = this.store.select(selectLoading);
+  selectLoading$ = this.store.select(FileStore.selectLoading);
+  filteredRecords$ = this.store.select(FileStore.selectFilteredRecords);
 
-  constructor(private store: Store<FileState>) {}
+  constructor(private store: Store<FileStore.FileState>) {}
 
   readFile(file: DataTransfer) {
-    this.store.dispatch(readFile({ payload: { file } }));
+    this.store.dispatch(FileStore.readFile({ payload: { file } }));
   }
 
-  getFilteredRecords(issueCount: number) {
-    return this.store.select(selectFilteredRecords, issueCount);
+  setIssueCount(issueCount: number) {
+    this.store.dispatch(FileStore.setIssueCount({ payload: { issueCount } }));
+  }
+
+  reset() {
+    this.store.dispatch(FileStore.reset());
   }
 }

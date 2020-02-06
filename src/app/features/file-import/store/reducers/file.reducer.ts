@@ -8,6 +8,7 @@ export const fileFeatureKey = 'file';
 
 export interface FileState extends Loadable {
   records: FileRecord[];
+  issueCount?: number;
 }
 
 export const initialState: FileState = {
@@ -30,6 +31,13 @@ const fileReducer = createReducer(
   on(FileActions.readFileFailure, (state, { error }) => ({
     ...state,
     ...onLoadFail(error)
+  })),
+  on(FileActions.setIssueCount, (state, { payload: { issueCount } }) => ({
+    ...state,
+    issueCount
+  })),
+  on(FileActions.reset, () => ({
+    ...initialState
   }))
 );
 
