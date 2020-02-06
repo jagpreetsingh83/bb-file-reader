@@ -11,6 +11,11 @@ export const selectLoading = createSelector(
   (state: fromFile.FileState) => state.loading
 );
 
+export const selectError = createSelector(
+  selectFileState,
+  (state: fromFile.FileState) => state.error
+);
+
 export const selectFilteredRecords = createSelector(
   selectFileState,
   (state: fromFile.FileState) =>

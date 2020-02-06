@@ -5,11 +5,11 @@ import * as XLSX from 'xlsx';
 
 @Injectable()
 export class FileReaderService {
-  private recs = new Subject<AOA>();
-
   read(target: DataTransfer): Observable<AOA> {
+    const records$ = new Subject<AOA>();
+
     if (target.files.length !== 1) {
-      throw new Error('Cannot use multiple files');
+      records$.error(Error('Cannot use multiple files'));
     }
     const reader: FileReader = new FileReader();
     reader.onload = (e: any) => {
@@ -27,9 +27,11 @@ export class FileReaderService {
       // remove header row
       recs.shift();
 
-      this.recs.next(recs);
+      records$.next(recs);
+      records$.complete();
     };
     reader.readAsBinaryString(target.files[0]);
-    return this.recs.asObservable();
+
+    return records$.asObservable();
   }
 }

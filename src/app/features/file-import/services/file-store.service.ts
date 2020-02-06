@@ -6,6 +6,7 @@ import { Store } from '@ngrx/store';
 export class FileStoreService {
   selectLoading$ = this.store.select(FileStore.selectLoading);
   filteredRecords$ = this.store.select(FileStore.selectFilteredRecords);
+  selectError$ = this.store.select(FileStore.selectError);
 
   constructor(private store: Store<FileStore.FileState>) {}
 

@@ -20,15 +20,15 @@ export class FileEffects {
         this.reader.read(file).pipe(
           tap(data => this.logger.debug('Read', data.length)),
           map(data => this.adapter.getFileRecords(data)),
-          delay(2000),
+          delay(2000), // Intended Delay for the Spinner (demo purpose!)
           map(records =>
             FileActions.readFileSuccess({
               payload: { records }
             })
           ),
-          catchError(error => {
-            this.logger.error('Error while reading file', error);
-            return of(FileActions.readFileFailure({ error }));
+          catchError((error: Error) => {
+            this.logger.error('Error while reading file', error.message);
+            return of(FileActions.readFileFailure({ error: error.message }));
           })
         )
       )
