@@ -13,6 +13,7 @@ export class FileImportComponent implements OnInit {
   issueCountField = new FormControl();
 
   records$ = this.fileStore.getFilteredRecords(null);
+  loading$ = this.fileStore.selectLoading$;
 
   constructor(private fileStore: FileStoreService) {}
 

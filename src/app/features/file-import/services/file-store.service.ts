@@ -1,9 +1,11 @@
 import { Injectable } from '@angular/core';
-import { FileState, readFile, selectFilteredRecords } from '@file/store';
+import { FileState, readFile, selectFilteredRecords, selectLoading } from '@file/store';
 import { Store } from '@ngrx/store';
 
 @Injectable()
 export class FileStoreService {
+  selectLoading$ = this.store.select(selectLoading);
+
   constructor(private store: Store<FileState>) {}
 
   readFile(file: DataTransfer) {

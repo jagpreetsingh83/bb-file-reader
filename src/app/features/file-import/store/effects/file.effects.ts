@@ -4,7 +4,7 @@ import { FileReaderService } from '@file/services/file-reader.service';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
 import { NGXLogger } from 'ngx-logger';
 import { of } from 'rxjs';
-import { catchError, map, switchMap, tap } from 'rxjs/operators';
+import { catchError, delay, map, switchMap, tap } from 'rxjs/operators';
 
 import * as FileActions from '../actions/file.actions';
 
@@ -20,6 +20,7 @@ export class FileEffects {
         this.reader.read(file).pipe(
           tap(data => this.logger.debug('Read', data.length)),
           map(data => this.adapter.getFileRecords(data)),
+          delay(2000),
           map(records =>
             FileActions.readFileSuccess({
               payload: { records }

@@ -18,6 +18,7 @@ export class TableComponent extends BaseComponent implements OnInit {
   @ViewChild(MatSort, { static: true }) sort: MatSort;
 
   @Input() records: Observable<FileRecord[]>;
+  @Input() isLoading: Observable<boolean>;
 
   dataSource: MatTableDataSource<FileRecord>;
   displayedColumns = ['name', 'surname', 'issueCount', 'dob'];

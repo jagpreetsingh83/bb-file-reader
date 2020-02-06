@@ -14,13 +14,19 @@
       />
     </button>
     <mat-form-field>
-      <input [formControl]="issueCountField" matInput type="number" placeholder="Filter" aria-label="Enter a value to filter on issue count"/>
+      <input
+        [formControl]="issueCountField"
+        matInput
+        type="number"
+        placeholder="Filter"
+        aria-label="Enter a value to filter on issue count"
+      />
       <mat-hint>
         &#8804; Issue Count
       </mat-hint>
     </mat-form-field>
   </section>
   <section>
-    <bb-table [records]="records$"></bb-table>
+    <bb-table [records]="records$" [isLoading]="loading$"></bb-table>
   </section>
 </section>

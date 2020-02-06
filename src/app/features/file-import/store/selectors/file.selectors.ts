@@ -6,6 +6,11 @@ export const selectFileState = createFeatureSelector<fromFile.FileState>(
   fromFile.fileFeatureKey
 );
 
+export const selectLoading = createSelector(
+  selectFileState,
+  (state: fromFile.FileState) => state.loading
+);
+
 export const selectFilteredRecords = createSelector(
   selectFileState,
   (state: fromFile.FileState, props) =>
