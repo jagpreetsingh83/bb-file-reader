@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
 
-import { FileStoreService } from './services/file-store.service';
+import { FileStoreService } from '../services/file-store.service';
 
 @Component({
   selector: 'bb-file-import',
