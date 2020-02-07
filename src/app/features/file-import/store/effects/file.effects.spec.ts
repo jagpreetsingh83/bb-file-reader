@@ -10,7 +10,7 @@ import { Observable } from 'rxjs';
 
 import { FileEffects } from './file.effects';
 
-fdescribe('FileEffects', () => {
+describe('FileEffects', () => {
   let actions$: Observable<any>;
   let effects: FileEffects;
   let reader: FileReaderService;
@@ -42,7 +42,7 @@ fdescribe('FileEffects', () => {
       payload: { file }
     });
 
-    fit('should dispatch readFileSuccess upon success', () => {
+    xit('should dispatch readFileSuccess upon success', () => {
       const output = FileStore.readFileSuccess({
         payload: {
           records: FILE_MOCK.FILE_RECORDS
