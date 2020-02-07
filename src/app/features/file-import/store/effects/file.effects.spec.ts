@@ -10,7 +10,7 @@ import { Observable } from 'rxjs';
 
 import { FileEffects } from './file.effects';
 
-describe('FileEffects', () => {
+fdescribe('FileEffects', () => {
   let actions$: Observable<any>;
   let effects: FileEffects;
   let reader: FileReaderService;
@@ -36,11 +36,13 @@ describe('FileEffects', () => {
   });
 
   describe('readFile$', () => {
+    const file = (FILE_MOCK.EVENT.target as unknown) as DataTransfer;
+
     const input = FileStore.readFile({
-      payload: { file: FILE_MOCK.DATA_TRANSFER }
+      payload: { file }
     });
 
-    it('should dispatch readFileSuccess upon success', () => {
+    fit('should dispatch readFileSuccess upon success', () => {
       const output = FileStore.readFileSuccess({
         payload: {
           records: FILE_MOCK.FILE_RECORDS
@@ -56,7 +58,7 @@ describe('FileEffects', () => {
         .and.returnValue(cold('-a|', { a: FILE_MOCK.CSV_RECORDS }));
 
       expect(effects.readFile$).toBeObservable(expected);
-      expect(reader.read).toHaveBeenCalledWith(FILE_MOCK.DATA_TRANSFER);
+      expect(reader.read).toHaveBeenCalledWith(file);
     });
 
     it('should dispatch readFileFailure upon error', () => {
@@ -73,7 +75,7 @@ describe('FileEffects', () => {
       reader.read = jasmine.createSpy().and.returnValue(cold('-#|', {}, error));
 
       expect(effects.readFile$).toBeObservable(expected);
-      expect(reader.read).toHaveBeenCalledWith(FILE_MOCK.DATA_TRANSFER);
+      expect(reader.read).toHaveBeenCalledWith(file);
     });
   });
 });
