@@ -17,6 +17,11 @@ export class TableComponent extends BaseComponent implements OnInit {
   @ViewChild(MatPaginator, { static: false }) paginator: MatPaginator;
   @ViewChild(MatSort, { static: false }) sort: MatSort;
 
+  // Pagination
+  pageSize = 10;
+  pageSizeOptions: number[] = [10, 25, 50];
+  showFirstLastButtons = true;
+
   @Input() records: Observable<FileRecord[]>;
   @Input() isLoading: Observable<boolean>;
 

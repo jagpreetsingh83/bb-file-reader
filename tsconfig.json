@@ -18,7 +18,8 @@
       "@core/*": ["src/app/core/*"],
       "@file/*": ["src/app/features/file-import/*"],
       "@app/*": ["src/app/*"],
-      "@shared/*": ["src/app/shared/*"]
+      "@shared/*": ["src/app/shared/*"],
+      "@tests/*": ["src/tests/*"]
     }
   },
   "angularCompilerOptions": {

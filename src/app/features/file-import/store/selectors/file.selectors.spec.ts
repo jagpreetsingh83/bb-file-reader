@@ -6,7 +6,6 @@ describe('File Selectors', () => {
     const result = selectFileState({
       [fromFile.fileFeatureKey]: {}
     });
-
-    expect(result).toEqual({});
+    expect(result).toEqual(null);
   });
 });

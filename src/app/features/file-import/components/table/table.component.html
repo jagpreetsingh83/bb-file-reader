@@ -42,6 +42,7 @@
     aria-label="import status"
     tabindex="0"
     *ngIf="noResults"
+    id="no-records-display"
   >
     <ng-container *ngIf="isLoading | async; else elseTemplate">
       Loading...
@@ -55,10 +56,9 @@
   <mat-paginator
     #paginator
     [length]="dataSource?.data.length"
-    [pageIndex]="0"
-    [pageSize]="10"
-    [pageSizeOptions]="[10, 25, 50]"
-    [showFirstLastButtons]="true"
+    [pageSize]="pageSize"
+    [pageSizeOptions]="pageSizeOptions"
+    [showFirstLastButtons]="showFirstLastButtons"
   >
   </mat-paginator>
 </section>
