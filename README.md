@@ -2,26 +2,6 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.0.
 
-## Documentation
-
-Generate
-
-```
-npm run compodoc
-```
-
-Serve
-
-```
-npm run compodoc:serve
-```
-
-Access
-
-```
-http://localhost:8080/
-```
-
 ## Issues
 
 - Handling of the DOB. Unable to read/parse the date format correctly from the excel file.
