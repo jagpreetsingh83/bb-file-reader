@@ -49,7 +49,7 @@ export const ERROR_FILE_STORE: AppState = {
   }
 };
 
-export const DATA_TRANSFER = ({
+export const EVENT = {
   target: {
     files: [
       {
@@ -57,4 +57,4 @@ export const DATA_TRANSFER = ({
       }
     ]
   }
-} as unknown) as DataTransfer;
+};

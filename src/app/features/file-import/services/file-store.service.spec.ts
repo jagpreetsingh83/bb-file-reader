@@ -52,10 +52,11 @@ describe('FileStoreService', () => {
   });
 
   it('readFile', () => {
-    service.readFile(FILE_MOCK.DATA_TRANSFER);
+    const file = (FILE_MOCK.EVENT.target as unknown) as DataTransfer;
+    service.readFile(file);
     expect(store.dispatch).toHaveBeenCalledWith(
       FileStore.readFile({
-        payload: { file: FILE_MOCK.DATA_TRANSFER }
+        payload: { file }
       })
     );
   });

@@ -13,10 +13,9 @@ export class FileEffects {
   readFile$ = createEffect(() => {
     return this.actions$.pipe(
       ofType(FileActions.readFile),
-      tap(({ payload: { file } }) =>
-        this.logger.debug('Trying to read file', file.files[0].name)
-      ),
-      switchMap(({ payload: { file } }) =>
+      map(({ payload: { file } }) => file),
+      tap(file => this.logger.debug('Trying to read file', file.files[0].name)),
+      switchMap(file =>
         this.reader.read(file).pipe(
           tap(data => this.logger.debug('Read', data.length)),
           map(data => this.adapter.getFileRecords(data)),
