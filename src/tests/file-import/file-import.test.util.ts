@@ -48,3 +48,13 @@ export const ERROR_FILE_STORE: AppState = {
     error: 'kboom'
   }
 };
+
+export const DATA_TRANSFER = ({
+  target: {
+    files: [
+      {
+        name: 'mock.csv'
+      }
+    ]
+  }
+} as unknown) as DataTransfer;

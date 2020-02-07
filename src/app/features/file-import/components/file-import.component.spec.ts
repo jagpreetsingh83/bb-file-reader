@@ -4,6 +4,7 @@ import { MAT_SNACK_BAR_DATA, MatSnackBar } from '@angular/material';
 import { By } from '@angular/platform-browser';
 import { FileStoreService } from '@file/services/file-store.service';
 import { AppTestModule } from '@tests/app-test.module';
+import { DATA_TRANSFER } from '@tests/file-import/file-import.test.util';
 import { mockFileImportComponent } from '@tests/mocks';
 import { of } from 'rxjs';
 
@@ -64,19 +65,11 @@ describe('FileImportComponent', () => {
   }));
 
   it('should reset the import and perform a fresh read of the file', () => {
-    const event = {
-      target: {
-        files: [
-          {
-            name: 'mock.csv'
-          }
-        ]
-      }
-    };
+    const event = DATA_TRANSFER;
     component.issueCountField.setValue(12); // This should reset
     component.onFileChange(event);
     fixture.detectChanges();
-    expect(fileStore.readFile).toHaveBeenCalledWith(event.target);
+    expect(fileStore.readFile).toHaveBeenCalledWith((event as any).target);
     expect(el.query(By.css('#file-name')).nativeElement.textContent).toContain(
       'mock.csv'
     );
