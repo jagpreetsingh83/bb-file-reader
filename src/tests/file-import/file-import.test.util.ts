@@ -1,3 +1,4 @@
+import { AppState } from '@core/store/reducers';
 import { AOA, FileRecord } from '@file/models/file-import-models';
 import { FileAdapterService, FileRecordAdapter } from '@file/services/file-adapter.service';
 
@@ -22,3 +23,28 @@ const ADAPTER = new FileAdapterService(new FileRecordAdapter());
 // ACTUAL FILE RECORDS USED IN THE TABLE
 export const FILE_RECORDS: FileRecord[] = ADAPTER.getFileRecords(CSV_RECORDS);
 Object.freeze(FILE_RECORDS);
+
+export const INITIAL_FILE_STORE: AppState = {
+  file: {
+    records: []
+  }
+};
+
+export const LOADING_FILE_STORE: AppState = {
+  file: {
+    records: [],
+    loading: true
+  }
+};
+
+export const SUCCESS_FILE_STORE: AppState = {
+  file: {
+    records: FILE_RECORDS
+  }
+};
+
+export const ERROR_FILE_STORE: AppState = {
+  file: {
+    error: 'kboom'
+  }
+};
