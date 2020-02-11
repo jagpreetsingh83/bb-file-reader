@@ -17,8 +17,6 @@ const modules = [
   ReactiveFormsModule
 ];
 
-// RouterTestingModule.withRoutes([])
-
 @NgModule({
   imports: [...modules],
   exports: [...modules],

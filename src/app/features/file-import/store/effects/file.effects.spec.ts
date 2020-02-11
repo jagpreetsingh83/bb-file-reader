@@ -5,7 +5,7 @@ import * as FileStore from '@file/store';
 import { provideMockActions } from '@ngrx/effects/testing';
 import { AppTestModule } from '@tests/app-test.module';
 import * as FILE_MOCK from '@tests/file-import/file-import.test.util';
-import { cold, hot } from 'jasmine-marbles';
+import { cold, getTestScheduler, hot } from 'jasmine-marbles';
 import { Observable } from 'rxjs';
 
 import { FileEffects } from './file.effects';
@@ -42,23 +42,26 @@ describe('FileEffects', () => {
       payload: { file }
     });
 
-    xit('should dispatch readFileSuccess upon success', () => {
-      const output = FileStore.readFileSuccess({
-        payload: {
-          records: FILE_MOCK.FILE_RECORDS
-        }
+    it('should dispatch readFileSuccess upon success', () => {
+      const scheduler = getTestScheduler();
+
+      scheduler.run(helpers => {
+        const output = FileStore.readFileSuccess({
+          payload: {
+            records: FILE_MOCK.FILE_RECORDS
+          }
+        });
+
+        actions$ = hot('-a', { a: input });
+
+        reader.read = jasmine
+          .createSpy()
+          .and.returnValue(cold('-a|', { a: FILE_MOCK.CSV_RECORDS }));
+
+        helpers
+          .expectObservable(effects.readFile$)
+          .toBe('-- 2s b', { b: output });
       });
-
-      actions$ = hot('-a', { a: input });
-
-      const expected = cold('--b', { b: output });
-
-      reader.read = jasmine
-        .createSpy()
-        .and.returnValue(cold('-a|', { a: FILE_MOCK.CSV_RECORDS }));
-
-      expect(effects.readFile$).toBeObservable(expected);
-      expect(reader.read).toHaveBeenCalledWith(file);
     });
 
     it('should dispatch readFileFailure upon error', () => {
