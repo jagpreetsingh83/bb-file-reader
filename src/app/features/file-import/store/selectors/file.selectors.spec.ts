@@ -18,7 +18,7 @@ describe('File Selectors', () => {
       FILE_MOCK.FILE_RECORDS
     );
   });
-  it('selectFilteredRecords (with Issue Count', () => {
+  it('selectFilteredRecords (with Issue Count)', () => {
     const FILE_STATE: FileState = {
       ...(FILE_MOCK.SUCCESS_FILE_STORE as any).file,
       issueCount: 80
