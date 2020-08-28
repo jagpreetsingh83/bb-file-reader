@@ -15,6 +15,10 @@
           accept=".csv"
         />
       </button>
+      <!-- DOWNLOAD SAMPLE -->
+      <a href="assets/sample.csv" class="download" *ngIf="!fileName"
+        >Download Sample File</a
+      >
       <!-- FILE NAME -->
       <mat-chip-list aria-label="name of the imported file" *ngIf="fileName">
         <mat-chip role="alert" id="file-name">{{ fileName }}</mat-chip>
