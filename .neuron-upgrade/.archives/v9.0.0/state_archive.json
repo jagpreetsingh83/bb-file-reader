@@ -1,0 +1,1613 @@
+{
+  "version": "9.0.0",
+  "source_version": "8.0.0",
+  "upgrade_log": [
+    {
+      "timestamp": 1764878611.453026,
+      "action": "create_upgrade_branch",
+      "version": "9.0.0",
+      "branch_name": "angular-upgrade-8-0-0-to-20-0-0-20251204200331",
+      "base_branch": "master",
+      "base_branch_ref": "master",
+      "status": "success"
+    },
+    {
+      "timestamp": 1764878611.4530318,
+      "action": "initialize",
+      "version": "9.0.0",
+      "message": "Agent initialized for Angular 8.0.0 -> 20.0.0",
+      "intermediate_versions": [
+        "9.0.0",
+        "10.0.0",
+        "11.0.0",
+        "12.0.0",
+        "13.0.0",
+        "14.0.0",
+        "15.0.0",
+        "16.0.0",
+        "17.0.0",
+        "18.0.0",
+        "19.0.0",
+        "20.0.0"
+      ],
+      "branch_name": "angular-upgrade-8-0-0-to-20-0-0-20251204200331",
+      "status": "success"
+    },
+    {
+      "timestamp": 1764878676.3873708,
+      "action": "run_dependency_analysis",
+      "version": "9.0.0",
+      "packages_analyzed": 37,
+      "skipped_packages": 1,
+      "status": "success"
+    },
+    {
+      "timestamp": 1764878713.177068,
+      "action": "generate_current_version_playbook",
+      "version": "9.0.0",
+      "source_version": "8.0.0",
+      "package_upgrade_step_count": 37,
+      "command_count": 1,
+      "deprecation_count": 0,
+      "packages_count": 37,
+      "status": "success"
+    },
+    {
+      "timestamp": 1764878713.8419616,
+      "action": "prepare_package_upgrades",
+      "version": "9.0.0",
+      "node_modules_removed": true,
+      "lock_file_removed": true,
+      "status": "success"
+    },
+    {
+      "timestamp": 1764878726.3200421,
+      "action": "execute_package_npm_install",
+      "version": "9.0.0",
+      "package": "@angular/animations",
+      "command": "npm install @angular/animations@9.1.13 --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764878726.3926568,
+      "action": "generate_package_fixes",
+      "version": "9.0.0",
+      "package": "@angular/animations",
+      "fixes_generated": 0,
+      "success": true
+    },
+    {
+      "timestamp": 1764878726.3929827,
+      "action": "apply_package_fixes",
+      "version": "9.0.0",
+      "package": "@angular/animations",
+      "status": "completed"
+    },
+    {
+      "timestamp": 1764878727.8752487,
+      "action": "execute_package_npm_install",
+      "version": "9.0.0",
+      "package": "@angular/cdk",
+      "command": "npm install @angular/cdk@9.2.4 --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764878727.91757,
+      "action": "generate_package_fixes",
+      "version": "9.0.0",
+      "package": "@angular/cdk",
+      "fixes_generated": 0,
+      "success": true
+    },
+    {
+      "timestamp": 1764878727.917724,
+      "action": "apply_package_fixes",
+      "version": "9.0.0",
+      "package": "@angular/cdk",
+      "status": "completed"
+    },
+    {
+      "timestamp": 1764878730.740977,
+      "action": "execute_package_npm_install",
+      "version": "9.0.0",
+      "package": "@angular/cli",
+      "command": "npm install @angular/cli@9.1.15 --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764878730.7580225,
+      "action": "generate_package_fixes",
+      "version": "9.0.0",
+      "package": "@angular/cli",
+      "fixes_generated": 0,
+      "success": true
+    },
+    {
+      "timestamp": 1764878730.758234,
+      "action": "apply_package_fixes",
+      "version": "9.0.0",
+      "package": "@angular/cli",
+      "status": "completed"
+    },
+    {
+      "timestamp": 1764878732.2913027,
+      "action": "execute_package_npm_install",
+      "version": "9.0.0",
+      "package": "@angular/common",
+      "command": "npm install @angular/common@9.1.13 --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764878732.313303,
+      "action": "generate_package_fixes",
+      "version": "9.0.0",
+      "package": "@angular/common",
+      "fixes_generated": 0,
+      "success": true
+    },
+    {
+      "timestamp": 1764878732.3134432,
+      "action": "apply_package_fixes",
+      "version": "9.0.0",
+      "package": "@angular/common",
+      "status": "completed"
+    },
+    {
+      "timestamp": 1764878733.8767326,
+      "action": "execute_package_npm_install",
+      "version": "9.0.0",
+      "package": "@angular/compiler",
+      "command": "npm install @angular/compiler@9.1.13 --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764878733.9004362,
+      "action": "generate_package_fixes",
+      "version": "9.0.0",
+      "package": "@angular/compiler",
+      "fixes_generated": 0,
+      "success": true
+    },
+    {
+      "timestamp": 1764878733.9008036,
+      "action": "apply_package_fixes",
+      "version": "9.0.0",
+      "package": "@angular/compiler",
+      "status": "completed"
+    },
+    {
+      "timestamp": 1764878735.6002557,
+      "action": "execute_package_npm_install",
+      "version": "9.0.0",
+      "package": "@angular/compiler-cli",
+      "command": "npm install @angular/compiler-cli@9.1.13 --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764878735.6263745,
+      "action": "generate_package_fixes",
+      "version": "9.0.0",
+      "package": "@angular/compiler-cli",
+      "fixes_generated": 0,
+      "success": true
+    },
+    {
+      "timestamp": 1764878735.6265206,
+      "action": "apply_package_fixes",
+      "version": "9.0.0",
+      "package": "@angular/compiler-cli",
+      "status": "completed"
+    },
+    {
+      "timestamp": 1764878737.284529,
+      "action": "execute_package_npm_install",
+      "version": "9.0.0",
+      "package": "@angular/core",
+      "command": "npm install @angular/core@9.1.13 --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764878744.3349762,
+      "action": "generate_package_fixes",
+      "version": "9.0.0",
+      "package": "@angular/core",
+      "fixes_generated": 2,
+      "success": true
+    },
+    {
+      "timestamp": 1764878744.3353276,
+      "action": "apply_package_fixes",
+      "version": "9.0.0",
+      "package": "@angular/core",
+      "status": "completed"
+    },
+    {
+      "timestamp": 1764878745.9157484,
+      "action": "execute_package_npm_install",
+      "version": "9.0.0",
+      "package": "@angular/forms",
+      "command": "npm install @angular/forms@9.1.13 --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764878745.9259717,
+      "action": "generate_package_fixes",
+      "version": "9.0.0",
+      "package": "@angular/forms",
+      "fixes_generated": 0,
+      "success": true
+    },
+    {
+      "timestamp": 1764878745.9262373,
+      "action": "apply_package_fixes",
+      "version": "9.0.0",
+      "package": "@angular/forms",
+      "status": "completed"
+    },
+    {
+      "timestamp": 1764878747.4586234,
+      "action": "execute_package_npm_install",
+      "version": "9.0.0",
+      "package": "@angular/language-service",
+      "command": "npm install @angular/language-service@9.1.13 --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764878747.4787087,
+      "action": "generate_package_fixes",
+      "version": "9.0.0",
+      "package": "@angular/language-service",
+      "fixes_generated": 0,
+      "success": true
+    },
+    {
+      "timestamp": 1764878747.4788742,
+      "action": "apply_package_fixes",
+      "version": "9.0.0",
+      "package": "@angular/language-service",
+      "status": "completed"
+    },
+    {
+      "timestamp": 1764878749.3737886,
+      "action": "execute_package_npm_install",
+      "version": "9.0.0",
+      "package": "@angular/material",
+      "command": "npm install @angular/material@9.2.4 --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764878749.4297264,
+      "action": "generate_package_fixes",
+      "version": "9.0.0",
+      "package": "@angular/material",
+      "fixes_generated": 0,
+      "success": true
+    },
+    {
+      "timestamp": 1764878749.4301314,
+      "action": "apply_package_fixes",
+      "version": "9.0.0",
+      "package": "@angular/material",
+      "status": "completed"
+    },
+    {
+      "timestamp": 1764878750.997874,
+      "action": "execute_package_npm_install",
+      "version": "9.0.0",
+      "package": "@angular/platform-browser",
+      "command": "npm install @angular/platform-browser@9.1.13 --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764878751.023065,
+      "action": "generate_package_fixes",
+      "version": "9.0.0",
+      "package": "@angular/platform-browser",
+      "fixes_generated": 0,
+      "success": true
+    },
+    {
+      "timestamp": 1764878751.0233605,
+      "action": "apply_package_fixes",
+      "version": "9.0.0",
+      "package": "@angular/platform-browser",
+      "status": "completed"
+    },
+    {
+      "timestamp": 1764878752.6469622,
+      "action": "execute_package_npm_install",
+      "version": "9.0.0",
+      "package": "@angular/platform-browser-dynamic",
+      "command": "npm install @angular/platform-browser-dynamic@9.1.13 --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764878752.647371,
+      "action": "generate_package_fixes",
+      "version": "9.0.0",
+      "package": "@angular/platform-browser-dynamic",
+      "fixes_generated": 0,
+      "success": true,
+      "skipped": true,
+      "reason": "no breaking changes"
+    },
+    {
+      "timestamp": 1764878752.647446,
+      "action": "apply_package_fixes",
+      "version": "9.0.0",
+      "package": "@angular/platform-browser-dynamic",
+      "status": "completed"
+    },
+    {
+      "timestamp": 1764878754.1278257,
+      "action": "execute_package_npm_install",
+      "version": "9.0.0",
+      "package": "@angular/router",
+      "command": "npm install @angular/router@9.1.13 --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764878754.137555,
+      "action": "generate_package_fixes",
+      "version": "9.0.0",
+      "package": "@angular/router",
+      "fixes_generated": 0,
+      "success": true
+    },
+    {
+      "timestamp": 1764878754.137965,
+      "action": "apply_package_fixes",
+      "version": "9.0.0",
+      "package": "@angular/router",
+      "status": "completed"
+    },
+    {
+      "timestamp": 1764878755.635157,
+      "action": "execute_package_npm_install",
+      "version": "9.0.0",
+      "package": "@ngrx/effects",
+      "command": "npm install @ngrx/effects@9.2.1 --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764878755.659025,
+      "action": "generate_package_fixes",
+      "version": "9.0.0",
+      "package": "@ngrx/effects",
+      "fixes_generated": 0,
+      "success": true
+    },
+    {
+      "timestamp": 1764878755.6595438,
+      "action": "apply_package_fixes",
+      "version": "9.0.0",
+      "package": "@ngrx/effects",
+      "status": "completed"
+    },
+    {
+      "timestamp": 1764878757.2033205,
+      "action": "execute_package_npm_install",
+      "version": "9.0.0",
+      "package": "@ngrx/schematics",
+      "command": "npm install @ngrx/schematics@8.6.1 --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764878757.2036023,
+      "action": "generate_package_fixes",
+      "version": "9.0.0",
+      "package": "@ngrx/schematics",
+      "fixes_generated": 0,
+      "success": true,
+      "skipped": true,
+      "reason": "no breaking changes"
+    },
+    {
+      "timestamp": 1764878757.2037442,
+      "action": "apply_package_fixes",
+      "version": "9.0.0",
+      "package": "@ngrx/schematics",
+      "status": "completed"
+    },
+    {
+      "timestamp": 1764878758.606516,
+      "action": "execute_package_npm_install",
+      "version": "9.0.0",
+      "package": "@ngrx/store",
+      "command": "npm install @ngrx/store@9.2.1 --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764878788.0553772,
+      "action": "generate_package_fixes",
+      "version": "9.0.0",
+      "package": "@ngrx/store",
+      "fixes_generated": 0,
+      "success": true
+    },
+    {
+      "timestamp": 1764878788.0556767,
+      "action": "apply_package_fixes",
+      "version": "9.0.0",
+      "package": "@ngrx/store",
+      "status": "completed"
+    },
+    {
+      "timestamp": 1764878789.6122732,
+      "action": "execute_package_npm_install",
+      "version": "9.0.0",
+      "package": "@ngrx/store-devtools",
+      "command": "npm install @ngrx/store-devtools@8.6.1 --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764878789.6126263,
+      "action": "generate_package_fixes",
+      "version": "9.0.0",
+      "package": "@ngrx/store-devtools",
+      "fixes_generated": 0,
+      "success": true,
+      "skipped": true,
+      "reason": "no breaking changes"
+    },
+    {
+      "timestamp": 1764878789.6127534,
+      "action": "apply_package_fixes",
+      "version": "9.0.0",
+      "package": "@ngrx/store-devtools",
+      "status": "completed"
+    },
+    {
+      "timestamp": 1764878791.0946088,
+      "action": "execute_package_npm_install",
+      "version": "9.0.0",
+      "package": "@types/jasmine",
+      "command": "npm install @types/jasmine@3.10.18 --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764878791.0948765,
+      "action": "generate_package_fixes",
+      "version": "9.0.0",
+      "package": "@types/jasmine",
+      "fixes_generated": 0,
+      "success": true,
+      "skipped": true,
+      "reason": "no breaking changes"
+    },
+    {
+      "timestamp": 1764878791.0949488,
+      "action": "apply_package_fixes",
+      "version": "9.0.0",
+      "package": "@types/jasmine",
+      "status": "completed"
+    },
+    {
+      "timestamp": 1764878792.6016889,
+      "action": "execute_package_npm_install",
+      "version": "9.0.0",
+      "package": "@types/jasminewd2",
+      "command": "npm install @types/jasminewd2@2.0.13 --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764878792.6019244,
+      "action": "generate_package_fixes",
+      "version": "9.0.0",
+      "package": "@types/jasminewd2",
+      "fixes_generated": 0,
+      "success": true,
+      "skipped": true,
+      "reason": "no breaking changes"
+    },
+    {
+      "timestamp": 1764878792.6022196,
+      "action": "apply_package_fixes",
+      "version": "9.0.0",
+      "package": "@types/jasminewd2",
+      "status": "completed"
+    },
+    {
+      "timestamp": 1764878794.1345358,
+      "action": "execute_package_npm_install",
+      "version": "9.0.0",
+      "package": "@types/node",
+      "command": "npm install @types/node@8.10.66 --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764878794.2097058,
+      "action": "generate_package_fixes",
+      "version": "9.0.0",
+      "package": "@types/node",
+      "fixes_generated": 0,
+      "success": true
+    },
+    {
+      "timestamp": 1764878794.210121,
+      "action": "apply_package_fixes",
+      "version": "9.0.0",
+      "package": "@types/node",
+      "status": "completed"
+    },
+    {
+      "timestamp": 1764878796.0152423,
+      "action": "execute_package_npm_install",
+      "version": "9.0.0",
+      "package": "codelyzer",
+      "command": "npm install codelyzer@6.0.2 --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764878796.0232275,
+      "action": "generate_package_fixes",
+      "version": "9.0.0",
+      "package": "codelyzer",
+      "fixes_generated": 0,
+      "success": true
+    },
+    {
+      "timestamp": 1764878796.0233946,
+      "action": "apply_package_fixes",
+      "version": "9.0.0",
+      "package": "codelyzer",
+      "status": "completed"
+    },
+    {
+      "timestamp": 1764878797.5730166,
+      "action": "execute_package_npm_install",
+      "version": "9.0.0",
+      "package": "jasmine-core",
+      "command": "npm install jasmine-core@5.13.0 --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764878797.573411,
+      "action": "generate_package_fixes",
+      "version": "9.0.0",
+      "package": "jasmine-core",
+      "fixes_generated": 0,
+      "success": true,
+      "skipped": true,
+      "reason": "no breaking changes"
+    },
+    {
+      "timestamp": 1764878797.5735269,
+      "action": "apply_package_fixes",
+      "version": "9.0.0",
+      "package": "jasmine-core",
+      "status": "completed"
+    },
+    {
+      "timestamp": 1764878799.141396,
+      "action": "execute_package_npm_install",
+      "version": "9.0.0",
+      "package": "jasmine-marbles",
+      "command": "npm install jasmine-marbles@0.9.2 --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764878807.42104,
+      "action": "generate_package_fixes",
+      "version": "9.0.0",
+      "package": "jasmine-marbles",
+      "fixes_generated": 0,
+      "success": true
+    },
+    {
+      "timestamp": 1764878807.4214427,
+      "action": "apply_package_fixes",
+      "version": "9.0.0",
+      "package": "jasmine-marbles",
+      "status": "completed"
+    },
+    {
+      "timestamp": 1764878808.9871097,
+      "action": "execute_package_npm_install",
+      "version": "9.0.0",
+      "package": "jasmine-spec-reporter",
+      "command": "npm install jasmine-spec-reporter@7.0.0 --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764878809.0010715,
+      "action": "generate_package_fixes",
+      "version": "9.0.0",
+      "package": "jasmine-spec-reporter",
+      "fixes_generated": 0,
+      "success": true
+    },
+    {
+      "timestamp": 1764878809.0013506,
+      "action": "apply_package_fixes",
+      "version": "9.0.0",
+      "package": "jasmine-spec-reporter",
+      "status": "completed"
+    },
+    {
+      "timestamp": 1764878810.7175426,
+      "action": "execute_package_npm_install",
+      "version": "9.0.0",
+      "package": "karma",
+      "command": "npm install karma@6.4.4 --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764878810.717807,
+      "action": "generate_package_fixes",
+      "version": "9.0.0",
+      "package": "karma",
+      "fixes_generated": 0,
+      "success": true,
+      "skipped": true,
+      "reason": "no breaking changes"
+    },
+    {
+      "timestamp": 1764878810.717889,
+      "action": "apply_package_fixes",
+      "version": "9.0.0",
+      "package": "karma",
+      "status": "completed"
+    },
+    {
+      "timestamp": 1764878812.3676596,
+      "action": "execute_package_npm_install",
+      "version": "9.0.0",
+      "package": "karma-chrome-launcher",
+      "command": "npm install karma-chrome-launcher@3.2.0 --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764878812.367831,
+      "action": "generate_package_fixes",
+      "version": "9.0.0",
+      "package": "karma-chrome-launcher",
+      "fixes_generated": 0,
+      "success": true,
+      "skipped": true,
+      "reason": "no breaking changes"
+    },
+    {
+      "timestamp": 1764878812.367884,
+      "action": "apply_package_fixes",
+      "version": "9.0.0",
+      "package": "karma-chrome-launcher",
+      "status": "completed"
+    },
+    {
+      "timestamp": 1764878813.8722117,
+      "action": "execute_package_npm_install",
+      "version": "9.0.0",
+      "package": "karma-coverage-istanbul-reporter",
+      "command": "npm install karma-coverage-istanbul-reporter@2.1.1 --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764878813.8723645,
+      "action": "generate_package_fixes",
+      "version": "9.0.0",
+      "package": "karma-coverage-istanbul-reporter",
+      "fixes_generated": 0,
+      "success": true,
+      "skipped": true,
+      "reason": "no breaking changes"
+    },
+    {
+      "timestamp": 1764878813.8725538,
+      "action": "apply_package_fixes",
+      "version": "9.0.0",
+      "package": "karma-coverage-istanbul-reporter",
+      "status": "completed"
+    },
+    {
+      "timestamp": 1764878815.4960382,
+      "action": "execute_package_npm_install",
+      "version": "9.0.0",
+      "package": "karma-jasmine",
+      "command": "npm install karma-jasmine@5.1.0 --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764878815.4964802,
+      "action": "generate_package_fixes",
+      "version": "9.0.0",
+      "package": "karma-jasmine",
+      "fixes_generated": 0,
+      "success": true,
+      "skipped": true,
+      "reason": "no breaking changes"
+    },
+    {
+      "timestamp": 1764878815.496641,
+      "action": "apply_package_fixes",
+      "version": "9.0.0",
+      "package": "karma-jasmine",
+      "status": "completed"
+    },
+    {
+      "timestamp": 1764878816.976703,
+      "action": "execute_package_npm_install",
+      "version": "9.0.0",
+      "package": "karma-jasmine-html-reporter",
+      "command": "npm install karma-jasmine-html-reporter@1.7.0 --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764878816.9771423,
+      "action": "generate_package_fixes",
+      "version": "9.0.0",
+      "package": "karma-jasmine-html-reporter",
+      "fixes_generated": 0,
+      "success": true,
+      "skipped": true,
+      "reason": "no breaking changes"
+    },
+    {
+      "timestamp": 1764878816.9772832,
+      "action": "apply_package_fixes",
+      "version": "9.0.0",
+      "package": "karma-jasmine-html-reporter",
+      "status": "completed"
+    },
+    {
+      "timestamp": 1764878818.4715576,
+      "action": "execute_package_npm_install",
+      "version": "9.0.0",
+      "package": "protractor",
+      "command": "npm install protractor@5.4.4 --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764878818.4720025,
+      "action": "generate_package_fixes",
+      "version": "9.0.0",
+      "package": "protractor",
+      "fixes_generated": 0,
+      "success": true,
+      "skipped": true,
+      "reason": "no breaking changes"
+    },
+    {
+      "timestamp": 1764878818.4720776,
+      "action": "apply_package_fixes",
+      "version": "9.0.0",
+      "package": "protractor",
+      "status": "completed"
+    },
+    {
+      "timestamp": 1764878820.1453683,
+      "action": "execute_package_npm_install",
+      "version": "9.0.0",
+      "package": "rxjs",
+      "command": "npm install rxjs@6.6.7 --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764878820.1456547,
+      "action": "generate_package_fixes",
+      "version": "9.0.0",
+      "package": "rxjs",
+      "fixes_generated": 0,
+      "success": true,
+      "skipped": true,
+      "reason": "no breaking changes"
+    },
+    {
+      "timestamp": 1764878820.1457624,
+      "action": "apply_package_fixes",
+      "version": "9.0.0",
+      "package": "rxjs",
+      "status": "completed"
+    },
+    {
+      "timestamp": 1764878821.6413863,
+      "action": "execute_package_npm_install",
+      "version": "9.0.0",
+      "package": "ts-node",
+      "command": "npm install ts-node@7.0.1 --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764878821.6416042,
+      "action": "generate_package_fixes",
+      "version": "9.0.0",
+      "package": "ts-node",
+      "fixes_generated": 0,
+      "success": true,
+      "skipped": true,
+      "reason": "no breaking changes"
+    },
+    {
+      "timestamp": 1764878821.6418338,
+      "action": "apply_package_fixes",
+      "version": "9.0.0",
+      "package": "ts-node",
+      "status": "completed"
+    },
+    {
+      "timestamp": 1764878823.1353457,
+      "action": "execute_package_npm_install",
+      "version": "9.0.0",
+      "package": "tslib",
+      "command": "npm install tslib@1.14.1 --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764878823.144088,
+      "action": "generate_package_fixes",
+      "version": "9.0.0",
+      "package": "tslib",
+      "fixes_generated": 0,
+      "success": true
+    },
+    {
+      "timestamp": 1764878823.1442475,
+      "action": "apply_package_fixes",
+      "version": "9.0.0",
+      "package": "tslib",
+      "status": "completed"
+    },
+    {
+      "timestamp": 1764878824.6017652,
+      "action": "execute_package_npm_install",
+      "version": "9.0.0",
+      "package": "tslint",
+      "command": "npm install tslint@5.20.1 --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764878824.6021729,
+      "action": "generate_package_fixes",
+      "version": "9.0.0",
+      "package": "tslint",
+      "fixes_generated": 0,
+      "success": true,
+      "skipped": true,
+      "reason": "no breaking changes"
+    },
+    {
+      "timestamp": 1764878824.6023433,
+      "action": "apply_package_fixes",
+      "version": "9.0.0",
+      "package": "tslint",
+      "status": "completed"
+    },
+    {
+      "timestamp": 1764878826.2745738,
+      "action": "execute_package_npm_install",
+      "version": "9.0.0",
+      "package": "typescript",
+      "command": "npm install typescript@3.7.7 --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764878826.2905068,
+      "action": "generate_package_fixes",
+      "version": "9.0.0",
+      "package": "typescript",
+      "fixes_generated": 0,
+      "success": true
+    },
+    {
+      "timestamp": 1764878826.291001,
+      "action": "apply_package_fixes",
+      "version": "9.0.0",
+      "package": "typescript",
+      "status": "completed"
+    },
+    {
+      "timestamp": 1764878827.6824534,
+      "action": "execute_package_npm_install",
+      "version": "9.0.0",
+      "package": "xlsx",
+      "command": "npm install xlsx@0.18.5 --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764878827.6976328,
+      "action": "generate_package_fixes",
+      "version": "9.0.0",
+      "package": "xlsx",
+      "fixes_generated": 0,
+      "success": true
+    },
+    {
+      "timestamp": 1764878827.697928,
+      "action": "apply_package_fixes",
+      "version": "9.0.0",
+      "package": "xlsx",
+      "status": "completed"
+    },
+    {
+      "timestamp": 1764878829.0409741,
+      "action": "execute_package_npm_install",
+      "version": "9.0.0",
+      "package": "zone.js",
+      "command": "npm install zone.js@0.10.3 --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764878829.0412364,
+      "action": "generate_package_fixes",
+      "version": "9.0.0",
+      "package": "zone.js",
+      "fixes_generated": 0,
+      "success": true,
+      "skipped": true,
+      "reason": "no breaking changes"
+    },
+    {
+      "timestamp": 1764878829.0413144,
+      "action": "apply_package_fixes",
+      "version": "9.0.0",
+      "package": "zone.js",
+      "status": "completed"
+    },
+    {
+      "timestamp": 1764878830.4202566,
+      "action": "finalize_package_installs",
+      "version": "9.0.0",
+      "command": "npm install --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764878847.12352,
+      "action": "check_build_after_packages",
+      "version": "9.0.0",
+      "status": "failed",
+      "error_count": 4
+    },
+    {
+      "timestamp": 1764878858.0837884,
+      "action": "analyze_package_errors",
+      "version": "9.0.0",
+      "error_count": 4,
+      "fix_count": 3,
+      "retry_count": 1
+    },
+    {
+      "timestamp": 1764878858.1593208,
+      "action": "analyze_dependency_impact_package",
+      "version": "9.0.0",
+      "llm_warnings_count": 0,
+      "kb_warnings_count": 0,
+      "new_warnings_count": 0,
+      "phase": "package"
+    },
+    {
+      "timestamp": 1764878858.1593244,
+      "action": "apply_package_fixes",
+      "version": "9.0.0",
+      "applied_count": 2,
+      "failed_count": 1,
+      "retry_count": 1
+    },
+    {
+      "timestamp": 1764878858.2857778,
+      "action": "npm_install_after_package_json_fix",
+      "version": "9.0.0",
+      "success": false
+    },
+    {
+      "timestamp": 1764878858.5934992,
+      "action": "check_build_after_packages",
+      "version": "9.0.0",
+      "status": "failed",
+      "error_count": 0
+    },
+    {
+      "timestamp": 1764878859.0114722,
+      "action": "check_build_after_packages",
+      "version": "9.0.0",
+      "status": "failed",
+      "error_count": 0
+    },
+    {
+      "timestamp": 1764878859.3198955,
+      "action": "check_build_after_packages",
+      "version": "9.0.0",
+      "status": "failed",
+      "error_count": 0
+    },
+    {
+      "timestamp": 1764878859.3459926,
+      "action": "git_commit_before_ng_update",
+      "version": "9.0.0",
+      "command": "ng update @angular/cli@9.0.0 @angular/core@9.0.0"
+    },
+    {
+      "timestamp": 1764878859.4210768,
+      "action": "execute_command",
+      "version": "9.0.0",
+      "command": "ng update @angular/cli@9.0.0 @angular/core@9.0.0",
+      "success": false,
+      "output": "",
+      "error": "Skipping invalid project value; expected an object.\nWorkspace config file cannot be loaded: /workspace/bb-file-reader/angular.json\nProject \"schematics\" is missing a required property \"root\".\n"
+    },
+    {
+      "timestamp": 1764878859.6302216,
+      "action": "check_build_after_command",
+      "version": "9.0.0",
+      "status": "failed",
+      "error_count": 0,
+      "command_index": 0,
+      "command": "ng update @angular/cli@9.0.0 @angular/core@9.0.0",
+      "output": null
+    },
+    {
+      "timestamp": 1764878859.6315832,
+      "action": "detect_test_frameworks",
+      "version": "9.0.0",
+      "unit_framework": null,
+      "e2e_framework": null,
+      "frameworks_to_test": []
+    },
+    {
+      "timestamp": 1764878859.6322057,
+      "action": "check_version_completion",
+      "version": "9.0.0",
+      "commands_completed": true,
+      "deprecations_completed": true,
+      "build_status": "failed"
+    }
+  ],
+  "applied_fixes": [
+    {
+      "file_path": "package.json",
+      "original_code": "",
+      "fixed_code": "  \"scripts\": {\n    \"ng\": \"ng\",\n    \"start\": \"node --openssl-legacy-provider node_modules/@angular/cli/bin/ng serve\",\n    \"build\": \"node --openssl-legacy-provider node_modules/@angular/cli/bin/ng build\",\n    \"test\": \"node --openssl-legacy-provider node_modules/@angular/cli/bin/ng test\",\n    \"lint\": \"ng lint\",\n    \"e2e\": \"ng e2e\"",
+      "description": "[Pattern-matched] Add Node.js OpenSSL legacy provider flag to Angular CLI commands to fix digital envelope routines error",
+      "confidence": 0.30000000000000004,
+      "operation": "replace",
+      "line_number": 0,
+      "insert_after": "\"scripts\": {",
+      "insert_before": "",
+      "error_file": null,
+      "error_line": null,
+      "version": "9.0.0"
+    },
+    {
+      "file_path": "angular.json",
+      "original_code": "",
+      "fixed_code": "        \"options\": {\n          \"allowedCommonJsDependencies\": [\n            \"xlsx\"\n          ]",
+      "description": "[Pattern-matched] Add allowedCommonJsDependencies for xlsx package to prevent build warnings in Angular 20",
+      "confidence": 0.23333333333333334,
+      "operation": "insert",
+      "line_number": 0,
+      "insert_after": "\"build\": {",
+      "insert_before": "",
+      "error_file": null,
+      "error_line": null,
+      "version": "9.0.0"
+    }
+  ],
+  "dependency_warnings": [],
+  "analyzed_packages": [
+    {
+      "version": "9.0.0",
+      "source_version": "8.0.0",
+      "packages": [
+        {
+          "name": "@angular/animations",
+          "currentVersion": "8.2.14",
+          "targetVersion": "9.1.13",
+          "requiredBy": [
+            "root",
+            "@angular/material",
+            "@angular/platform-browser"
+          ],
+          "dependencyType": [
+            "root",
+            "peerDependency"
+          ],
+          "optional": false,
+          "angularDependent": true
+        },
+        {
+          "name": "@angular/cdk",
+          "currentVersion": "8.2.3",
+          "targetVersion": "9.2.4",
+          "requiredBy": [
+            "root",
+            "@angular/material"
+          ],
+          "dependencyType": [
+            "root",
+            "peerDependency"
+          ],
+          "optional": false,
+          "angularDependent": true
+        },
+        {
+          "name": "@angular/cli",
+          "currentVersion": "8.3.24",
+          "targetVersion": "9.1.15",
+          "requiredBy": [
+            "root"
+          ],
+          "dependencyType": [
+            "root"
+          ],
+          "optional": false,
+          "angularDependent": true
+        },
+        {
+          "name": "@angular/common",
+          "currentVersion": "8.2.14",
+          "targetVersion": "9.1.13",
+          "requiredBy": [
+            "root",
+            "@angular/cdk",
+            "@angular/forms",
+            "@angular/material",
+            "@angular/platform-browser",
+            "@angular/platform-browser-dynamic",
+            "@angular/router"
+          ],
+          "dependencyType": [
+            "root",
+            "peerDependency"
+          ],
+          "optional": false,
+          "angularDependent": true
+        },
+        {
+          "name": "@angular/compiler",
+          "currentVersion": "8.2.14",
+          "targetVersion": "9.1.13",
+          "requiredBy": [
+            "root",
+            "@angular/platform-browser-dynamic",
+            "@angular/compiler-cli"
+          ],
+          "dependencyType": [
+            "root",
+            "peerDependency"
+          ],
+          "optional": false,
+          "angularDependent": true
+        },
+        {
+          "name": "@angular/compiler-cli",
+          "currentVersion": "8.2.14",
+          "targetVersion": "9.1.13",
+          "requiredBy": [
+            "root"
+          ],
+          "dependencyType": [
+            "root"
+          ],
+          "optional": false,
+          "angularDependent": true
+        },
+        {
+          "name": "@angular/core",
+          "currentVersion": "8.2.14",
+          "targetVersion": "9.1.13",
+          "requiredBy": [
+            "root",
+            "@angular/animations",
+            "@angular/cdk",
+            "@angular/common",
+            "@angular/forms",
+            "@angular/material",
+            "@angular/platform-browser",
+            "@angular/platform-browser-dynamic",
+            "@angular/router"
+          ],
+          "dependencyType": [
+            "root",
+            "peerDependency"
+          ],
+          "optional": false,
+          "angularDependent": true
+        },
+        {
+          "name": "@angular/forms",
+          "currentVersion": "8.2.14",
+          "targetVersion": "9.1.13",
+          "requiredBy": [
+            "root",
+            "@angular/material"
+          ],
+          "dependencyType": [
+            "root",
+            "peerDependency"
+          ],
+          "optional": false,
+          "angularDependent": true
+        },
+        {
+          "name": "@angular/language-service",
+          "currentVersion": "8.2.14",
+          "targetVersion": "9.1.13",
+          "requiredBy": [
+            "root"
+          ],
+          "dependencyType": [
+            "root"
+          ],
+          "optional": false,
+          "angularDependent": true
+        },
+        {
+          "name": "@angular/material",
+          "currentVersion": "8.2.3",
+          "targetVersion": "9.2.4",
+          "requiredBy": [
+            "root"
+          ],
+          "dependencyType": [
+            "root"
+          ],
+          "optional": false,
+          "angularDependent": true
+        },
+        {
+          "name": "@angular/platform-browser",
+          "currentVersion": "8.2.14",
+          "targetVersion": "9.1.13",
+          "requiredBy": [
+            "root",
+            "@angular/forms",
+            "@angular/platform-browser-dynamic",
+            "@angular/router"
+          ],
+          "dependencyType": [
+            "root",
+            "peerDependency"
+          ],
+          "optional": false,
+          "angularDependent": true
+        },
+        {
+          "name": "@angular/platform-browser-dynamic",
+          "currentVersion": "8.2.14",
+          "targetVersion": "9.1.13",
+          "requiredBy": [
+            "root"
+          ],
+          "dependencyType": [
+            "root"
+          ],
+          "optional": false,
+          "angularDependent": true
+        },
+        {
+          "name": "@angular/router",
+          "currentVersion": "8.2.14",
+          "targetVersion": "9.1.13",
+          "requiredBy": [
+            "root"
+          ],
+          "dependencyType": [
+            "root"
+          ],
+          "optional": false,
+          "angularDependent": true
+        },
+        {
+          "name": "@ngrx/effects",
+          "currentVersion": "8.6.0",
+          "targetVersion": "9.2.1",
+          "requiredBy": [
+            "root"
+          ],
+          "dependencyType": [
+            "root"
+          ],
+          "optional": false,
+          "angularDependent": true
+        },
+        {
+          "name": "@ngrx/schematics",
+          "currentVersion": "8.6.0",
+          "targetVersion": "8.6.1",
+          "requiredBy": [
+            "root"
+          ],
+          "dependencyType": [
+            "root"
+          ],
+          "optional": true,
+          "angularDependent": false
+        },
+        {
+          "name": "@ngrx/store",
+          "currentVersion": "8.6.0",
+          "targetVersion": "9.2.1",
+          "requiredBy": [
+            "root",
+            "@ngrx/store-devtools"
+          ],
+          "dependencyType": [
+            "root",
+            "peerDependency"
+          ],
+          "optional": false,
+          "angularDependent": true
+        },
+        {
+          "name": "@ngrx/store-devtools",
+          "currentVersion": "8.6.0",
+          "targetVersion": "8.6.1",
+          "requiredBy": [
+            "root"
+          ],
+          "dependencyType": [
+            "root"
+          ],
+          "optional": true,
+          "angularDependent": false
+        },
+        {
+          "name": "@types/jasmine",
+          "currentVersion": "3.3.8",
+          "targetVersion": "3.10.18",
+          "requiredBy": [
+            "root"
+          ],
+          "dependencyType": [
+            "root"
+          ],
+          "optional": true,
+          "angularDependent": false
+        },
+        {
+          "name": "@types/jasminewd2",
+          "currentVersion": "2.0.3",
+          "targetVersion": "2.0.13",
+          "requiredBy": [
+            "root"
+          ],
+          "dependencyType": [
+            "root"
+          ],
+          "optional": true,
+          "angularDependent": false
+        },
+        {
+          "name": "@types/node",
+          "currentVersion": "8.9.4",
+          "targetVersion": "8.10.66",
+          "requiredBy": [
+            "root"
+          ],
+          "dependencyType": [
+            "root"
+          ],
+          "optional": true,
+          "angularDependent": false
+        },
+        {
+          "name": "codelyzer",
+          "currentVersion": "5.0.0",
+          "targetVersion": "6.0.2",
+          "requiredBy": [
+            "root"
+          ],
+          "dependencyType": [
+            "root"
+          ],
+          "optional": false,
+          "angularDependent": true
+        },
+        {
+          "name": "jasmine-core",
+          "currentVersion": "3.4.0",
+          "targetVersion": "5.13.0",
+          "requiredBy": [
+            "root",
+            "karma-jasmine-html-reporter",
+            "karma-jasmine"
+          ],
+          "dependencyType": [
+            "root",
+            "peerDependency",
+            "dependency"
+          ],
+          "optional": false,
+          "angularDependent": false
+        },
+        {
+          "name": "jasmine-marbles",
+          "currentVersion": "0.6.0",
+          "targetVersion": "0.9.2",
+          "requiredBy": [
+            "root"
+          ],
+          "dependencyType": [
+            "root"
+          ],
+          "optional": true,
+          "angularDependent": false
+        },
+        {
+          "name": "jasmine-spec-reporter",
+          "currentVersion": "4.2.1",
+          "targetVersion": "7.0.0",
+          "requiredBy": [
+            "root"
+          ],
+          "dependencyType": [
+            "root"
+          ],
+          "optional": true,
+          "angularDependent": false
+        },
+        {
+          "name": "karma",
+          "currentVersion": "4.1.0",
+          "targetVersion": "6.4.4",
+          "requiredBy": [
+            "root",
+            "karma-jasmine"
+          ],
+          "dependencyType": [
+            "root",
+            "peerDependency"
+          ],
+          "optional": false,
+          "angularDependent": false
+        },
+        {
+          "name": "karma-chrome-launcher",
+          "currentVersion": "2.2.0",
+          "targetVersion": "3.2.0",
+          "requiredBy": [
+            "root"
+          ],
+          "dependencyType": [
+            "root"
+          ],
+          "optional": true,
+          "angularDependent": false
+        },
+        {
+          "name": "karma-coverage-istanbul-reporter",
+          "currentVersion": "2.0.1",
+          "targetVersion": "2.1.1",
+          "requiredBy": [
+            "root"
+          ],
+          "dependencyType": [
+            "root"
+          ],
+          "optional": true,
+          "angularDependent": false
+        },
+        {
+          "name": "karma-jasmine",
+          "currentVersion": "2.0.1",
+          "targetVersion": "5.1.0",
+          "requiredBy": [
+            "root"
+          ],
+          "dependencyType": [
+            "root"
+          ],
+          "optional": true,
+          "angularDependent": false
+        },
+        {
+          "name": "karma-jasmine-html-reporter",
+          "currentVersion": "1.4.0",
+          "targetVersion": "1.7.0",
+          "requiredBy": [
+            "root"
+          ],
+          "dependencyType": [
+            "root"
+          ],
+          "optional": true,
+          "angularDependent": false
+        },
+        {
+          "name": "protractor",
+          "currentVersion": "5.4.0",
+          "targetVersion": "5.4.4",
+          "requiredBy": [
+            "root"
+          ],
+          "dependencyType": [
+            "root"
+          ],
+          "optional": true,
+          "angularDependent": false
+        },
+        {
+          "name": "rxjs",
+          "currentVersion": "6.5.4",
+          "targetVersion": "6.6.7",
+          "requiredBy": [
+            "root",
+            "jasmine-marbles"
+          ],
+          "dependencyType": [
+            "root",
+            "peerDependency"
+          ],
+          "optional": false,
+          "angularDependent": false
+        },
+        {
+          "name": "ts-node",
+          "currentVersion": "7.0.0",
+          "targetVersion": "7.0.1",
+          "requiredBy": [
+            "root"
+          ],
+          "dependencyType": [
+            "root"
+          ],
+          "optional": true,
+          "angularDependent": false
+        },
+        {
+          "name": "tslib",
+          "currentVersion": "1.9.0",
+          "targetVersion": "1.14.1",
+          "requiredBy": [
+            "root"
+          ],
+          "dependencyType": [
+            "root"
+          ],
+          "optional": true,
+          "angularDependent": false
+        },
+        {
+          "name": "tslint",
+          "currentVersion": "5.15.0",
+          "targetVersion": "5.20.1",
+          "requiredBy": [
+            "root"
+          ],
+          "dependencyType": [
+            "root"
+          ],
+          "optional": true,
+          "angularDependent": false
+        },
+        {
+          "name": "typescript",
+          "currentVersion": "3.5.3",
+          "targetVersion": "3.7.7",
+          "requiredBy": [
+            "@angular/compiler-cli"
+          ],
+          "dependencyType": [
+            "peerDependency"
+          ],
+          "optional": false
+        },
+        {
+          "name": "xlsx",
+          "currentVersion": "0.15.5",
+          "targetVersion": "0.18.5",
+          "requiredBy": [
+            "root"
+          ],
+          "dependencyType": [
+            "root"
+          ],
+          "optional": true,
+          "angularDependent": false
+        },
+        {
+          "name": "zone.js",
+          "currentVersion": "0.9.1",
+          "targetVersion": "0.10.3",
+          "requiredBy": [
+            "@angular/core"
+          ],
+          "dependencyType": [
+            "peerDependency"
+          ],
+          "optional": false
+        }
+      ],
+      "total_count": 37
+    }
+  ]
+}
