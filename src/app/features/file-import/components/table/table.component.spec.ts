@@ -14,9 +14,8 @@ describe('TableComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      imports: [AppTestModule],
-      declarations: [TableComponent]
-    }).compileComponents();
+    imports: [AppTestModule, TableComponent]
+}).compileComponents();
   }));
 
   beforeEach(() => {

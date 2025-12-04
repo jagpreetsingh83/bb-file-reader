@@ -21,13 +21,13 @@ const SERVICES = [
 ];
 
 @NgModule({
-  declarations: [...COMPONENTS],
-  imports: [
-    SharedModule,
-    FileImportRoutingModule,
-    StoreModule.forFeature(FileStore.fileFeatureKey, FileStore.reducer),
-    EffectsModule.forFeature([FileStore.FileEffects])
-  ],
-  providers: [...SERVICES]
+    imports: [
+        SharedModule,
+        FileImportRoutingModule,
+        StoreModule.forFeature(FileStore.fileFeatureKey, FileStore.reducer),
+        EffectsModule.forFeature([FileStore.FileEffects]),
+        ...COMPONENTS
+    ],
+    providers: [...SERVICES]
 })
 export class FileImportModule {}

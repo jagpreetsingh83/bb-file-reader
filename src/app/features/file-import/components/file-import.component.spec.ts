@@ -19,20 +19,19 @@ describe('FileImportComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      imports: [AppTestModule],
-      declarations: [FileImportComponent],
-      schemas: [NO_ERRORS_SCHEMA],
-      providers: [
+    imports: [AppTestModule, FileImportComponent],
+    schemas: [NO_ERRORS_SCHEMA],
+    providers: [
         {
-          provide: FileStoreService,
-          useValue: mockFileImportComponent()
+            provide: FileStoreService,
+            useValue: mockFileImportComponent()
         },
         {
-          provide: MAT_SNACK_BAR_DATA,
-          useValue: {}
+            provide: MAT_SNACK_BAR_DATA,
+            useValue: {}
         }
-      ]
-    }).compileComponents();
+    ]
+}).compileComponents();
   }));
 
   beforeEach(() => {
