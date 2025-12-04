@@ -1,5 +1,5 @@
 import { DebugElement, NO_ERRORS_SCHEMA } from '@angular/core';
-import { async, ComponentFixture, fakeAsync, TestBed, tick } from '@angular/core/testing';
+import { ComponentFixture, fakeAsync, TestBed, tick, waitForAsync } from '@angular/core/testing';
 import { MAT_SNACK_BAR_DATA, MatSnackBar } from '@angular/material';
 import { By } from '@angular/platform-browser';
 import { FileStoreService } from '@file/services/file-store.service';
@@ -17,7 +17,7 @@ describe('FileImportComponent', () => {
   let snackBar: MatSnackBar;
   let el: DebugElement;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       imports: [AppTestModule],
       declarations: [FileImportComponent],

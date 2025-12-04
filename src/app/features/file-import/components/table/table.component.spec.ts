@@ -1,5 +1,5 @@
 import { DebugElement } from '@angular/core';
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import * as FILE_MOCK from '@tests/file-import/file-import.test.util';
 import { of } from 'rxjs';
@@ -12,7 +12,7 @@ describe('TableComponent', () => {
   let fixture: ComponentFixture<TableComponent>;
   let el: DebugElement;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       imports: [AppTestModule],
       declarations: [TableComponent]
