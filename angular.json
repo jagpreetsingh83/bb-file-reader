@@ -15,6 +15,10 @@
       "prefix": "bb",
       "architect": {
         "build": {
+        "options": {
+          "allowedCommonJsDependencies": [
+            "xlsx"
+          ]
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/bb-app",

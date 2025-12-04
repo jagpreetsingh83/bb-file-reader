@@ -38,9 +38,9 @@ describe('FileImportComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(FileImportComponent);
     component = fixture.componentInstance;
-    fileStore = TestBed.get(FileStoreService);
+    fileStore = TestBed.inject(FileStoreService);
     component.error$ = of(null);
-    snackBar = TestBed.get(MatSnackBar);
+    snackBar = TestBed.inject(MatSnackBar);
     el = fixture.debugElement;
     fixture.detectChanges();
   });
