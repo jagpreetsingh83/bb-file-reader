@@ -116,7 +116,7 @@
       }
     }
   },
-  "defaultProject": "bb-app",
+   "bb-app",
   "schematics": {
     "@schematics/angular:component": {
       "changeDetection": "OnPush"

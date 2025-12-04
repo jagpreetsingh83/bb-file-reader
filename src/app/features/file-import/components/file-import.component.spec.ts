@@ -1,5 +1,5 @@
 import { DebugElement, NO_ERRORS_SCHEMA } from '@angular/core';
-import { async, ComponentFixture, fakeAsync, TestBed, tick } from '@angular/core/testing';
+import { ComponentFixture, fakeAsync, TestBed, tick, waitForAsync } from '@angular/core/testing';
 import { MAT_SNACK_BAR_DATA, MatSnackBar } from '@angular/material';
 import { By } from '@angular/platform-browser';
 import { FileStoreService } from '@file/services/file-store.service';
@@ -17,30 +17,29 @@ describe('FileImportComponent', () => {
   let snackBar: MatSnackBar;
   let el: DebugElement;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      imports: [AppTestModule],
-      declarations: [FileImportComponent],
-      schemas: [NO_ERRORS_SCHEMA],
-      providers: [
+    imports: [AppTestModule, FileImportComponent],
+    schemas: [NO_ERRORS_SCHEMA],
+    providers: [
         {
-          provide: FileStoreService,
-          useValue: mockFileImportComponent()
+            provide: FileStoreService,
+            useValue: mockFileImportComponent()
         },
         {
-          provide: MAT_SNACK_BAR_DATA,
-          useValue: {}
+            provide: MAT_SNACK_BAR_DATA,
+            useValue: {}
         }
-      ]
-    }).compileComponents();
+    ]
+}).compileComponents();
   }));
 
   beforeEach(() => {
     fixture = TestBed.createComponent(FileImportComponent);
     component = fixture.componentInstance;
-    fileStore = TestBed.get(FileStoreService);
+    fileStore = TestBed.inject(FileStoreService);
     component.error$ = of(null);
-    snackBar = TestBed.get(MatSnackBar);
+    snackBar = TestBed.inject(MatSnackBar);
     el = fixture.debugElement;
     fixture.detectChanges();
   });

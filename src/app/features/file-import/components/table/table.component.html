@@ -1,10 +1,11 @@
 <section class="mat-elevation-z8 table">
   <!-- PROGRESS BAR -->
-  <mat-progress-bar
-    mode="indeterminate"
-    color="accent"
-    *ngIf="isLoading | async"
-  ></mat-progress-bar>
+  @if (isLoading | async) {
+    <mat-progress-bar
+      mode="indeterminate"
+      color="accent"
+    ></mat-progress-bar>
+  }
 
   <!-- TABLE -->
   <table mat-table [dataSource]="dataSource" matSort>
@@ -37,20 +38,20 @@
   </table>
 
   <!-- NO RECORDS -->
-  <div
-    class="table__norecords"
-    aria-label="import status"
-    tabindex="0"
-    *ngIf="noResults"
-    id="no-records-display"
-  >
-    <ng-container *ngIf="isLoading | async; else elseTemplate">
-      Loading...
-    </ng-container>
-    <ng-template #elseTemplate>
-      No Records. Please import a valid file.
-    </ng-template>
-  </div>
+  @if (noResults) {
+    <div
+      class="table__norecords"
+      aria-label="import status"
+      tabindex="0"
+      id="no-records-display"
+      >
+      @if (isLoading | async) {
+        Loading...
+      } @else {
+        No Records. Please import a valid file.
+      }
+    </div>
+  }
 
   <!-- PAGINATOR -->
   <mat-paginator
@@ -59,6 +60,6 @@
     [pageSize]="pageSize"
     [pageSizeOptions]="pageSizeOptions"
     [showFirstLastButtons]="showFirstLastButtons"
-  >
+    >
   </mat-paginator>
 </section>
