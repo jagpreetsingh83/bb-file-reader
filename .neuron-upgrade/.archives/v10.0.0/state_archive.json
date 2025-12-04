@@ -1,0 +1,122 @@
+{
+  "version": "10.0.0",
+  "source_version": "9.0.0",
+  "upgrade_log": [
+    {
+      "timestamp": 1764878859.6458428,
+      "action": "transition_to_next_version",
+      "version": "10.0.0",
+      "from_version": "9.0.0",
+      "to_version": "10.0.0",
+      "version_index": 1,
+      "status": "success"
+    },
+    {
+      "timestamp": 1764878859.8391001,
+      "action": "run_dependency_analysis",
+      "version": "10.0.0",
+      "packages_analyzed": 0,
+      "skipped_packages": 0,
+      "status": "success"
+    },
+    {
+      "timestamp": 1764878859.856663,
+      "action": "generate_current_version_playbook",
+      "version": "10.0.0",
+      "source_version": "9.0.0",
+      "package_upgrade_step_count": 0,
+      "command_count": 1,
+      "deprecation_count": 0,
+      "packages_count": 0,
+      "status": "success"
+    },
+    {
+      "timestamp": 1764878860.5871134,
+      "action": "prepare_package_upgrades",
+      "version": "10.0.0",
+      "node_modules_removed": true,
+      "lock_file_removed": true,
+      "status": "success"
+    },
+    {
+      "timestamp": 1764878860.6968942,
+      "action": "finalize_package_installs",
+      "version": "10.0.0",
+      "command": "npm install --force",
+      "success": false
+    },
+    {
+      "timestamp": 1764878860.9038506,
+      "action": "check_build_after_packages",
+      "version": "10.0.0",
+      "status": "failed",
+      "error_count": 0
+    },
+    {
+      "timestamp": 1764878861.3130724,
+      "action": "check_build_after_packages",
+      "version": "10.0.0",
+      "status": "failed",
+      "error_count": 0
+    },
+    {
+      "timestamp": 1764878861.7344592,
+      "action": "check_build_after_packages",
+      "version": "10.0.0",
+      "status": "failed",
+      "error_count": 0
+    },
+    {
+      "timestamp": 1764878862.1531985,
+      "action": "check_build_after_packages",
+      "version": "10.0.0",
+      "status": "failed",
+      "error_count": 0
+    },
+    {
+      "timestamp": 1764878864.5172925,
+      "action": "execute_command",
+      "version": "10.0.0",
+      "command": "npx @angular/cli@10 update @angular/core@10 @angular/cli@10",
+      "success": false,
+      "output": "",
+      "error": "npm warn exec The following package was not found and will be installed: @angular/cli@10.2.1\nnpm warn deprecated debuglog@1.0.1: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.\nnpm warn deprecated readdir-scoped-modules@1.1.0: This functionality has been moved to @npmcli/fs\nnpm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests "
+    },
+    {
+      "timestamp": 1764878864.7220416,
+      "action": "check_build_after_command",
+      "version": "10.0.0",
+      "status": "failed",
+      "error_count": 0,
+      "command_index": 0,
+      "command": "npx @angular/cli@10 update @angular/core@10 @angular/cli@10",
+      "output": null
+    },
+    {
+      "timestamp": 1764878864.7232876,
+      "action": "detect_test_frameworks",
+      "version": "10.0.0",
+      "unit_framework": null,
+      "e2e_framework": null,
+      "frameworks_to_test": []
+    },
+    {
+      "timestamp": 1764878864.724101,
+      "action": "check_version_completion",
+      "version": "10.0.0",
+      "commands_completed": true,
+      "deprecations_completed": true,
+      "build_status": "failed"
+    }
+  ],
+  "applied_fixes": [],
+  "dependency_warnings": [],
+  "analyzed_packages": [
+    {
+      "version": "10.0.0",
+      "source_version": "9.0.0",
+      "packages": [],
+      "total_count": 0
+    }
+  ]
+}
