@@ -1,0 +1,122 @@
+{
+  "version": "15.0.0",
+  "source_version": "14.0.0",
+  "upgrade_log": [
+    {
+      "timestamp": 1764878873.242599,
+      "action": "transition_to_next_version",
+      "version": "15.0.0",
+      "from_version": "14.0.0",
+      "to_version": "15.0.0",
+      "version_index": 6,
+      "status": "success"
+    },
+    {
+      "timestamp": 1764878873.446994,
+      "action": "run_dependency_analysis",
+      "version": "15.0.0",
+      "packages_analyzed": 0,
+      "skipped_packages": 0,
+      "status": "success"
+    },
+    {
+      "timestamp": 1764878873.552028,
+      "action": "generate_current_version_playbook",
+      "version": "15.0.0",
+      "source_version": "14.0.0",
+      "package_upgrade_step_count": 0,
+      "command_count": 1,
+      "deprecation_count": 0,
+      "packages_count": 0,
+      "status": "success"
+    },
+    {
+      "timestamp": 1764878873.6654775,
+      "action": "prepare_package_upgrades",
+      "version": "15.0.0",
+      "node_modules_removed": true,
+      "lock_file_removed": true,
+      "status": "success"
+    },
+    {
+      "timestamp": 1764878873.7770002,
+      "action": "finalize_package_installs",
+      "version": "15.0.0",
+      "command": "npm install --force",
+      "success": false
+    },
+    {
+      "timestamp": 1764878873.984718,
+      "action": "check_build_after_packages",
+      "version": "15.0.0",
+      "status": "failed",
+      "error_count": 0
+    },
+    {
+      "timestamp": 1764878874.2924814,
+      "action": "check_build_after_packages",
+      "version": "15.0.0",
+      "status": "failed",
+      "error_count": 0
+    },
+    {
+      "timestamp": 1764878874.7080145,
+      "action": "check_build_after_packages",
+      "version": "15.0.0",
+      "status": "failed",
+      "error_count": 0
+    },
+    {
+      "timestamp": 1764878875.1256235,
+      "action": "check_build_after_packages",
+      "version": "15.0.0",
+      "status": "failed",
+      "error_count": 0
+    },
+    {
+      "timestamp": 1764878875.2113793,
+      "action": "execute_command",
+      "version": "15.0.0",
+      "command": "ng update @angular/cli@15.0.0 @angular/core@15.0.0",
+      "success": false,
+      "output": "",
+      "error": "Skipping invalid project value; expected an object.\nWorkspace config file cannot be loaded: /workspace/bb-file-reader/angular.json\nProject \"schematics\" is missing a required property \"root\".\n"
+    },
+    {
+      "timestamp": 1764878875.4166486,
+      "action": "check_build_after_command",
+      "version": "15.0.0",
+      "status": "failed",
+      "error_count": 0,
+      "command_index": 0,
+      "command": "ng update @angular/cli@15.0.0 @angular/core@15.0.0",
+      "output": null
+    },
+    {
+      "timestamp": 1764878875.4178793,
+      "action": "detect_test_frameworks",
+      "version": "15.0.0",
+      "unit_framework": null,
+      "e2e_framework": null,
+      "frameworks_to_test": []
+    },
+    {
+      "timestamp": 1764878875.4184704,
+      "action": "check_version_completion",
+      "version": "15.0.0",
+      "commands_completed": true,
+      "deprecations_completed": true,
+      "build_status": "failed"
+    }
+  ],
+  "applied_fixes": [],
+  "dependency_warnings": [],
+  "analyzed_packages": [
+    {
+      "version": "15.0.0",
+      "source_version": "14.0.0",
+      "packages": [],
+      "total_count": 0
+    }
+  ]
+}
