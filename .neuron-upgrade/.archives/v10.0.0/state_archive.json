@@ -1,0 +1,1221 @@
+{
+  "version": "10.0.0",
+  "source_version": "9.0.0",
+  "upgrade_log": [
+    {
+      "timestamp": 1764881023.1043055,
+      "action": "transition_to_next_version",
+      "version": "10.0.0",
+      "from_version": "9.0.0",
+      "to_version": "10.0.0",
+      "version_index": 1,
+      "status": "success"
+    },
+    {
+      "timestamp": 1764881073.3395064,
+      "action": "run_dependency_analysis",
+      "version": "10.0.0",
+      "packages_analyzed": 23,
+      "skipped_packages": 2,
+      "status": "success"
+    },
+    {
+      "timestamp": 1764881098.6655846,
+      "action": "generate_current_version_playbook",
+      "version": "10.0.0",
+      "source_version": "9.0.0",
+      "package_upgrade_step_count": 23,
+      "command_count": 1,
+      "deprecation_count": 0,
+      "packages_count": 23,
+      "status": "success"
+    },
+    {
+      "timestamp": 1764881099.3620756,
+      "action": "prepare_package_upgrades",
+      "version": "10.0.0",
+      "node_modules_removed": true,
+      "lock_file_removed": true,
+      "status": "success"
+    },
+    {
+      "timestamp": 1764881112.6662436,
+      "action": "execute_package_npm_install",
+      "version": "10.0.0",
+      "package": "@angular/animations",
+      "command": "npm install @angular/animations@10.2.5 --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764881112.6668828,
+      "action": "generate_package_fixes",
+      "version": "10.0.0",
+      "package": "@angular/animations",
+      "fixes_generated": 0,
+      "success": true,
+      "skipped": true,
+      "reason": "no breaking changes"
+    },
+    {
+      "timestamp": 1764881112.666989,
+      "action": "apply_package_fixes",
+      "version": "10.0.0",
+      "package": "@angular/animations",
+      "status": "completed"
+    },
+    {
+      "timestamp": 1764881114.8739135,
+      "action": "execute_package_npm_install",
+      "version": "10.0.0",
+      "package": "@angular/cdk",
+      "command": "npm install @angular/cdk@10.2.7 --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764881114.9664626,
+      "action": "generate_package_fixes",
+      "version": "10.0.0",
+      "package": "@angular/cdk",
+      "fixes_generated": 0,
+      "success": true
+    },
+    {
+      "timestamp": 1764881114.9666739,
+      "action": "apply_package_fixes",
+      "version": "10.0.0",
+      "package": "@angular/cdk",
+      "status": "completed"
+    },
+    {
+      "timestamp": 1764881118.0486584,
+      "action": "execute_package_npm_install",
+      "version": "10.0.0",
+      "package": "@angular/cli",
+      "command": "npm install @angular/cli@10.2.4 --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764881118.0657184,
+      "action": "generate_package_fixes",
+      "version": "10.0.0",
+      "package": "@angular/cli",
+      "fixes_generated": 0,
+      "success": true
+    },
+    {
+      "timestamp": 1764881118.0662277,
+      "action": "apply_package_fixes",
+      "version": "10.0.0",
+      "package": "@angular/cli",
+      "status": "completed"
+    },
+    {
+      "timestamp": 1764881119.7638013,
+      "action": "execute_package_npm_install",
+      "version": "10.0.0",
+      "package": "@angular/common",
+      "command": "npm install @angular/common@10.2.5 --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764881119.7640839,
+      "action": "generate_package_fixes",
+      "version": "10.0.0",
+      "package": "@angular/common",
+      "fixes_generated": 0,
+      "success": true,
+      "skipped": true,
+      "reason": "no breaking changes"
+    },
+    {
+      "timestamp": 1764881119.7642822,
+      "action": "apply_package_fixes",
+      "version": "10.0.0",
+      "package": "@angular/common",
+      "status": "completed"
+    },
+    {
+      "timestamp": 1764881121.427184,
+      "action": "execute_package_npm_install",
+      "version": "10.0.0",
+      "package": "@angular/compiler",
+      "command": "npm install @angular/compiler@10.2.5 --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764881121.458761,
+      "action": "generate_package_fixes",
+      "version": "10.0.0",
+      "package": "@angular/compiler",
+      "fixes_generated": 0,
+      "success": true
+    },
+    {
+      "timestamp": 1764881121.4592183,
+      "action": "apply_package_fixes",
+      "version": "10.0.0",
+      "package": "@angular/compiler",
+      "status": "completed"
+    },
+    {
+      "timestamp": 1764881123.26015,
+      "action": "execute_package_npm_install",
+      "version": "10.0.0",
+      "package": "@angular/compiler-cli",
+      "command": "npm install @angular/compiler-cli@10.2.5 --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764881123.2937968,
+      "action": "generate_package_fixes",
+      "version": "10.0.0",
+      "package": "@angular/compiler-cli",
+      "fixes_generated": 0,
+      "success": true
+    },
+    {
+      "timestamp": 1764881123.2941675,
+      "action": "apply_package_fixes",
+      "version": "10.0.0",
+      "package": "@angular/compiler-cli",
+      "status": "completed"
+    },
+    {
+      "timestamp": 1764881124.8802297,
+      "action": "execute_package_npm_install",
+      "version": "10.0.0",
+      "package": "@angular/core",
+      "command": "npm install @angular/core@10.2.5 --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764881124.9197748,
+      "action": "generate_package_fixes",
+      "version": "10.0.0",
+      "package": "@angular/core",
+      "fixes_generated": 0,
+      "success": true
+    },
+    {
+      "timestamp": 1764881124.9198968,
+      "action": "apply_package_fixes",
+      "version": "10.0.0",
+      "package": "@angular/core",
+      "status": "completed"
+    },
+    {
+      "timestamp": 1764881126.6162355,
+      "action": "execute_package_npm_install",
+      "version": "10.0.0",
+      "package": "@angular/forms",
+      "command": "npm install @angular/forms@10.2.5 --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764881126.6165533,
+      "action": "generate_package_fixes",
+      "version": "10.0.0",
+      "package": "@angular/forms",
+      "fixes_generated": 0,
+      "success": true,
+      "skipped": true,
+      "reason": "no breaking changes"
+    },
+    {
+      "timestamp": 1764881126.61676,
+      "action": "apply_package_fixes",
+      "version": "10.0.0",
+      "package": "@angular/forms",
+      "status": "completed"
+    },
+    {
+      "timestamp": 1764881128.2852705,
+      "action": "execute_package_npm_install",
+      "version": "10.0.0",
+      "package": "@angular/language-service",
+      "command": "npm install @angular/language-service@10.2.5 --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764881128.2856052,
+      "action": "generate_package_fixes",
+      "version": "10.0.0",
+      "package": "@angular/language-service",
+      "fixes_generated": 0,
+      "success": true,
+      "skipped": true,
+      "reason": "no breaking changes"
+    },
+    {
+      "timestamp": 1764881128.285683,
+      "action": "apply_package_fixes",
+      "version": "10.0.0",
+      "package": "@angular/language-service",
+      "status": "completed"
+    },
+    {
+      "timestamp": 1764881130.1371057,
+      "action": "execute_package_npm_install",
+      "version": "10.0.0",
+      "package": "@angular/material",
+      "command": "npm install @angular/material@10.2.7 --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764881130.1683993,
+      "action": "generate_package_fixes",
+      "version": "10.0.0",
+      "package": "@angular/material",
+      "fixes_generated": 0,
+      "success": true
+    },
+    {
+      "timestamp": 1764881130.1686425,
+      "action": "apply_package_fixes",
+      "version": "10.0.0",
+      "package": "@angular/material",
+      "status": "completed"
+    },
+    {
+      "timestamp": 1764881131.7117019,
+      "action": "execute_package_npm_install",
+      "version": "10.0.0",
+      "package": "@angular/platform-browser",
+      "command": "npm install @angular/platform-browser@10.2.5 --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764881131.7119277,
+      "action": "generate_package_fixes",
+      "version": "10.0.0",
+      "package": "@angular/platform-browser",
+      "fixes_generated": 0,
+      "success": true,
+      "skipped": true,
+      "reason": "no breaking changes"
+    },
+    {
+      "timestamp": 1764881131.712093,
+      "action": "apply_package_fixes",
+      "version": "10.0.0",
+      "package": "@angular/platform-browser",
+      "status": "completed"
+    },
+    {
+      "timestamp": 1764881133.3632119,
+      "action": "execute_package_npm_install",
+      "version": "10.0.0",
+      "package": "@angular/platform-browser-dynamic",
+      "command": "npm install @angular/platform-browser-dynamic@10.2.5 --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764881133.363494,
+      "action": "generate_package_fixes",
+      "version": "10.0.0",
+      "package": "@angular/platform-browser-dynamic",
+      "fixes_generated": 0,
+      "success": true,
+      "skipped": true,
+      "reason": "no breaking changes"
+    },
+    {
+      "timestamp": 1764881133.3636682,
+      "action": "apply_package_fixes",
+      "version": "10.0.0",
+      "package": "@angular/platform-browser-dynamic",
+      "status": "completed"
+    },
+    {
+      "timestamp": 1764881134.896252,
+      "action": "execute_package_npm_install",
+      "version": "10.0.0",
+      "package": "@angular/router",
+      "command": "npm install @angular/router@10.2.5 --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764881134.8964913,
+      "action": "generate_package_fixes",
+      "version": "10.0.0",
+      "package": "@angular/router",
+      "fixes_generated": 0,
+      "success": true,
+      "skipped": true,
+      "reason": "no breaking changes"
+    },
+    {
+      "timestamp": 1764881134.896659,
+      "action": "apply_package_fixes",
+      "version": "10.0.0",
+      "package": "@angular/router",
+      "status": "completed"
+    },
+    {
+      "timestamp": 1764881136.4850605,
+      "action": "execute_package_npm_install",
+      "version": "10.0.0",
+      "package": "@ngrx/effects",
+      "command": "npm install @ngrx/effects@10.1.2 --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764881143.9817636,
+      "action": "generate_package_fixes",
+      "version": "10.0.0",
+      "package": "@ngrx/effects",
+      "fixes_generated": 0,
+      "success": true
+    },
+    {
+      "timestamp": 1764881143.9820952,
+      "action": "apply_package_fixes",
+      "version": "10.0.0",
+      "package": "@ngrx/effects",
+      "status": "completed"
+    },
+    {
+      "timestamp": 1764881145.735747,
+      "action": "execute_package_npm_install",
+      "version": "10.0.0",
+      "package": "@ngrx/schematics",
+      "command": "npm install @ngrx/schematics@20.1.0 --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764881145.7536101,
+      "action": "generate_package_fixes",
+      "version": "10.0.0",
+      "package": "@ngrx/schematics",
+      "fixes_generated": 0,
+      "success": true
+    },
+    {
+      "timestamp": 1764881145.753911,
+      "action": "apply_package_fixes",
+      "version": "10.0.0",
+      "package": "@ngrx/schematics",
+      "status": "completed"
+    },
+    {
+      "timestamp": 1764881147.2057693,
+      "action": "execute_package_npm_install",
+      "version": "10.0.0",
+      "package": "@ngrx/store",
+      "command": "npm install @ngrx/store@20.1.0 --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764881159.254982,
+      "action": "generate_package_fixes",
+      "version": "10.0.0",
+      "package": "@ngrx/store",
+      "fixes_generated": 2,
+      "success": true
+    },
+    {
+      "timestamp": 1764881159.255236,
+      "action": "apply_package_fixes",
+      "version": "10.0.0",
+      "package": "@ngrx/store",
+      "status": "completed"
+    },
+    {
+      "timestamp": 1764881160.9418046,
+      "action": "execute_package_npm_install",
+      "version": "10.0.0",
+      "package": "@ngrx/store-devtools",
+      "command": "npm install @ngrx/store-devtools@20.1.0 --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764881161.0552542,
+      "action": "generate_package_fixes",
+      "version": "10.0.0",
+      "package": "@ngrx/store-devtools",
+      "fixes_generated": 0,
+      "success": true
+    },
+    {
+      "timestamp": 1764881161.0554965,
+      "action": "apply_package_fixes",
+      "version": "10.0.0",
+      "package": "@ngrx/store-devtools",
+      "status": "completed"
+    },
+    {
+      "timestamp": 1764881162.6230261,
+      "action": "execute_package_npm_install",
+      "version": "10.0.0",
+      "package": "karma-coverage-istanbul-reporter",
+      "command": "npm install karma-coverage-istanbul-reporter@3.0.3 --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764881162.6232963,
+      "action": "generate_package_fixes",
+      "version": "10.0.0",
+      "package": "karma-coverage-istanbul-reporter",
+      "fixes_generated": 0,
+      "success": true,
+      "skipped": true,
+      "reason": "no breaking changes"
+    },
+    {
+      "timestamp": 1764881162.6234891,
+      "action": "apply_package_fixes",
+      "version": "10.0.0",
+      "package": "karma-coverage-istanbul-reporter",
+      "status": "completed"
+    },
+    {
+      "timestamp": 1764881164.1656845,
+      "action": "execute_package_npm_install",
+      "version": "10.0.0",
+      "package": "karma-jasmine-html-reporter",
+      "command": "npm install karma-jasmine-html-reporter@2.1.0 --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764881164.1660354,
+      "action": "generate_package_fixes",
+      "version": "10.0.0",
+      "package": "karma-jasmine-html-reporter",
+      "fixes_generated": 0,
+      "success": true,
+      "skipped": true,
+      "reason": "no breaking changes"
+    },
+    {
+      "timestamp": 1764881164.1661463,
+      "action": "apply_package_fixes",
+      "version": "10.0.0",
+      "package": "karma-jasmine-html-reporter",
+      "status": "completed"
+    },
+    {
+      "timestamp": 1764881165.776497,
+      "action": "execute_package_npm_install",
+      "version": "10.0.0",
+      "package": "protractor",
+      "command": "npm install protractor@7.0.0 --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764881165.7768376,
+      "action": "generate_package_fixes",
+      "version": "10.0.0",
+      "package": "protractor",
+      "fixes_generated": 0,
+      "success": true,
+      "skipped": true,
+      "reason": "no breaking changes"
+    },
+    {
+      "timestamp": 1764881165.7770517,
+      "action": "apply_package_fixes",
+      "version": "10.0.0",
+      "package": "protractor",
+      "status": "completed"
+    },
+    {
+      "timestamp": 1764881167.4408975,
+      "action": "execute_package_npm_install",
+      "version": "10.0.0",
+      "package": "ts-node",
+      "command": "npm install ts-node@10.9.2 --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764881167.4788477,
+      "action": "generate_package_fixes",
+      "version": "10.0.0",
+      "package": "ts-node",
+      "fixes_generated": 0,
+      "success": true
+    },
+    {
+      "timestamp": 1764881167.4791963,
+      "action": "apply_package_fixes",
+      "version": "10.0.0",
+      "package": "ts-node",
+      "status": "completed"
+    },
+    {
+      "timestamp": 1764881169.138662,
+      "action": "execute_package_npm_install",
+      "version": "10.0.0",
+      "package": "tslib",
+      "command": "npm install tslib@2.8.1 --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764881169.1518905,
+      "action": "generate_package_fixes",
+      "version": "10.0.0",
+      "package": "tslib",
+      "fixes_generated": 0,
+      "success": true
+    },
+    {
+      "timestamp": 1764881169.152071,
+      "action": "apply_package_fixes",
+      "version": "10.0.0",
+      "package": "tslib",
+      "status": "completed"
+    },
+    {
+      "timestamp": 1764881170.7529135,
+      "action": "execute_package_npm_install",
+      "version": "10.0.0",
+      "package": "typescript",
+      "command": "npm install typescript@3.9.10 --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764881170.7883377,
+      "action": "generate_package_fixes",
+      "version": "10.0.0",
+      "package": "typescript",
+      "fixes_generated": 0,
+      "success": true
+    },
+    {
+      "timestamp": 1764881170.788699,
+      "action": "apply_package_fixes",
+      "version": "10.0.0",
+      "package": "typescript",
+      "status": "completed"
+    },
+    {
+      "timestamp": 1764881172.2524095,
+      "action": "finalize_package_installs",
+      "version": "10.0.0",
+      "command": "npm install --force",
+      "success": true
+    },
+    {
+      "timestamp": 1764881179.8935199,
+      "action": "check_build_after_packages",
+      "version": "10.0.0",
+      "status": "failed",
+      "error_count": 93
+    },
+    {
+      "timestamp": 1764881739.061324,
+      "action": "analyze_package_errors",
+      "version": "10.0.0",
+      "error_count": 93,
+      "fix_count": 15,
+      "retry_count": 1
+    },
+    {
+      "timestamp": 1764881739.1765404,
+      "action": "analyze_dependency_impact_package",
+      "version": "10.0.0",
+      "llm_warnings_count": 0,
+      "kb_warnings_count": 0,
+      "new_warnings_count": 0,
+      "phase": "package"
+    },
+    {
+      "timestamp": 1764881739.1765451,
+      "action": "apply_package_fixes",
+      "version": "10.0.0",
+      "applied_count": 5,
+      "failed_count": 2,
+      "retry_count": 1
+    },
+    {
+      "timestamp": 1764881742.483147,
+      "action": "check_build_after_packages",
+      "version": "10.0.0",
+      "status": "failed",
+      "error_count": 93
+    },
+    {
+      "timestamp": 1764882305.6286933,
+      "action": "analyze_package_errors",
+      "version": "10.0.0",
+      "error_count": 93,
+      "fix_count": 13,
+      "retry_count": 2
+    },
+    {
+      "timestamp": 1764882305.7067504,
+      "action": "analyze_dependency_impact_package",
+      "version": "10.0.0",
+      "llm_warnings_count": 0,
+      "kb_warnings_count": 0,
+      "new_warnings_count": 0,
+      "phase": "package"
+    },
+    {
+      "timestamp": 1764882305.70678,
+      "action": "apply_package_fixes",
+      "version": "10.0.0",
+      "applied_count": 3,
+      "failed_count": 1,
+      "retry_count": 2
+    },
+    {
+      "timestamp": 1764882309.1258197,
+      "action": "check_build_after_packages",
+      "version": "10.0.0",
+      "status": "failed",
+      "error_count": 93
+    },
+    {
+      "timestamp": 1764882883.6000926,
+      "action": "analyze_package_errors",
+      "version": "10.0.0",
+      "error_count": 93,
+      "fix_count": 11,
+      "retry_count": 3
+    },
+    {
+      "timestamp": 1764882883.718641,
+      "action": "analyze_dependency_impact_package",
+      "version": "10.0.0",
+      "llm_warnings_count": 0,
+      "kb_warnings_count": 0,
+      "new_warnings_count": 0,
+      "phase": "package"
+    },
+    {
+      "timestamp": 1764882883.718651,
+      "action": "apply_package_fixes",
+      "version": "10.0.0",
+      "applied_count": 1,
+      "failed_count": 2,
+      "retry_count": 3
+    },
+    {
+      "timestamp": 1764882887.0492313,
+      "action": "npm_install_after_package_json_fix",
+      "version": "10.0.0",
+      "success": true
+    },
+    {
+      "timestamp": 1764882890.255208,
+      "action": "check_build_after_packages",
+      "version": "10.0.0",
+      "status": "failed",
+      "error_count": 93
+    },
+    {
+      "timestamp": 1764882891.081139,
+      "action": "execute_command",
+      "version": "10.0.0",
+      "command": "npx @angular/cli@10 update @angular/core@10 @angular/cli@10",
+      "success": false,
+      "output": "",
+      "error": "Repository is not clean. Please commit or stash any changes before updating.\n"
+    },
+    {
+      "timestamp": 1764882894.0666318,
+      "action": "check_build_after_command",
+      "version": "10.0.0",
+      "status": "failed",
+      "error_count": 93,
+      "command_index": 0,
+      "command": "npx @angular/cli@10 update @angular/core@10 @angular/cli@10",
+      "output": null
+    },
+    {
+      "timestamp": 1764882894.0683637,
+      "action": "detect_test_frameworks",
+      "version": "10.0.0",
+      "unit_framework": "karma",
+      "e2e_framework": null,
+      "frameworks_to_test": []
+    },
+    {
+      "timestamp": 1764882894.0690427,
+      "action": "check_version_completion",
+      "version": "10.0.0",
+      "commands_completed": true,
+      "deprecations_completed": true,
+      "build_status": "failed"
+    }
+  ],
+  "applied_fixes": [
+    {
+      "file_path": "node_modules/@ngrx/store/src/action_group_creator.d.ts",
+      "original_code": " *     'Login Success': props<{ userId: number; token: string }>(),",
+      "fixed_code": " *     'Login Success': props(/* { userId: number; token: string } */),",
+      "description": "[Pattern-matched] Fix JSDoc comment syntax that's causing TypeScript parser errors by commenting out the generic type parameter",
+      "confidence": 0.3360000000000001,
+      "operation": "replace",
+      "line_number": 35,
+      "insert_after": "",
+      "insert_before": "",
+      "error_file": null,
+      "error_line": null,
+      "version": "10.0.0"
+    },
+    {
+      "file_path": "node_modules/@ngrx/store/src/action_group_creator.d.ts",
+      "original_code": " *     'Login Failure': props<{ error: string }>(),",
+      "fixed_code": " *     'Login Failure': props(/* { error: string } */),",
+      "description": "[Pattern-matched] Fix JSDoc comment syntax for the Login Failure example to prevent TypeScript parser errors",
+      "confidence": 0.3360000000000001,
+      "operation": "replace",
+      "line_number": 36,
+      "insert_after": "",
+      "insert_before": "",
+      "error_file": null,
+      "error_line": null,
+      "version": "10.0.0"
+    },
+    {
+      "file_path": "node_modules/@ngrx/store/src/action_group_creator.d.ts",
+      "original_code": " *     'Logout Failure': (error: Error) => ({ error }),",
+      "fixed_code": " *     'Logout Failure': props<{error: Error}>(),",
+      "description": "[Pattern-matched] Fix JSDoc comment syntax that's causing TypeScript parser errors. Replace arrow function syntax with props factory syntax in the documentation example.",
+      "confidence": 0.3360000000000001,
+      "operation": "replace",
+      "line_number": 42,
+      "insert_after": "",
+      "insert_before": "",
+      "error_file": null,
+      "error_line": null,
+      "version": "10.0.0"
+    },
+    {
+      "file_path": "node_modules/@ngrx/store/src/action_group_creator.d.ts",
+      "original_code": " * // action type: \"[Auth API] Logout Failure\";",
+      "fixed_code": " * // action type: \"[Auth API] Logout Failure\"",
+      "description": "[General analysis] Remove semicolon from comment line that was causing TS1109 'Expression expected' error",
+      "confidence": 0.95,
+      "operation": "replace",
+      "line_number": 55,
+      "insert_after": "",
+      "insert_before": "",
+      "error_file": null,
+      "error_line": null,
+      "version": "10.0.0"
+    },
+    {
+      "file_path": "node_modules/@ngrx/store/src/reducer_creator.d.ts",
+      "original_code": "export declare function on<State, Creators extends readonly ActionCreator[], InferredState = State>(...args: [\n    ...creators: Creators,\n    reducer: OnReducer<State extends infer S ? S : never, Creators, InferredState>\n]): ReducerTypes<unknown extends State ? InferredState : State, Creators>;",
+      "fixed_code": "export declare function on<State, Creators extends readonly ActionCreator[], InferredState = State>(...args: [\n    creators: Creators,\n    reducer: OnReducer<State extends infer S ? S : never, Creators, InferredState>\n]): ReducerTypes<unknown extends State ? InferredState : State, Creators>;",
+      "description": "[General analysis] Remove spread operator from tuple type parameter to fix TypeScript 3.9.10 compatibility issue. The spread operator in tuple types may not be fully supported in this TypeScript version.",
+      "confidence": 0.7,
+      "operation": "replace",
+      "line_number": 0,
+      "insert_after": "",
+      "insert_before": "",
+      "error_file": null,
+      "error_line": null,
+      "version": "10.0.0"
+    },
+    {
+      "file_path": "node_modules/@ngrx/store/src/action_group_creator.d.ts",
+      "original_code": " *     'Login Success': props(/* { userId: number; token: string } */),",
+      "fixed_code": " *     'Login Success': props<{ userId: number; token: string }>(),",
+      "description": "[Pattern-matched] Fix TypeScript parsing error in JSDoc comment by converting malformed comment to proper generic type syntax",
+      "confidence": 0.3360000000000001,
+      "operation": "replace",
+      "line_number": 35,
+      "insert_after": "",
+      "insert_before": "",
+      "error_file": null,
+      "error_line": null,
+      "version": "10.0.0"
+    },
+    {
+      "file_path": "node_modules/@ngrx/store/src/action_group_creator.d.ts",
+      "original_code": " *     'Login Failure': props(/* { error: string } */),",
+      "fixed_code": " *     'Login Failure': props<{ error: string }>(),",
+      "description": "[Pattern-matched] Fix TypeScript parsing error in JSDoc comment by converting malformed comment to proper generic type syntax",
+      "confidence": 0.3360000000000001,
+      "operation": "replace",
+      "line_number": 36,
+      "insert_after": "",
+      "insert_before": "",
+      "error_file": null,
+      "error_line": null,
+      "version": "10.0.0"
+    },
+    {
+      "file_path": "node_modules/@ngrx/store/src/reducer_creator.d.ts",
+      "original_code": "export declare function on<State, Creators extends readonly ActionCreator[], InferredState = State>(...args: [\n    creators: Creators,\n    reducer: OnReducer<State extends infer S ? S : never, Creators, InferredState>",
+      "fixed_code": "export declare function on<State, Creators extends readonly ActionCreator[], InferredState = State>(...args: [\n    creators: Creators,\n    reducer: OnReducer<State extends infer S ? S : never, Creators, InferredState>,",
+      "description": "[General analysis] Added missing comma after the reducer parameter in the function signature to fix TypeScript syntax error TS1005",
+      "confidence": 0.9,
+      "operation": "replace",
+      "line_number": 35,
+      "insert_after": "",
+      "insert_before": "",
+      "error_file": null,
+      "error_line": null,
+      "version": "10.0.0"
+    },
+    {
+      "file_path": "package.json",
+      "original_code": "",
+      "fixed_code": "",
+      "description": "[Pattern-matched] The error is in node_modules/@ngrx/store declaration files, indicating a package installation issue. This typically requires reinstalling node_modules. Since we cannot modify files in node_modules directly, the fix is to ensure proper package installation. You should run 'npm ci' or 'npm install' to reinstall packages, or check for TypeScript version compatibility issues between the upgraded packages.",
+      "confidence": 0.37800000000000006,
+      "operation": "insert",
+      "line_number": 1,
+      "insert_after": "",
+      "insert_before": "",
+      "error_file": null,
+      "error_line": null,
+      "version": "10.0.0"
+    }
+  ],
+  "dependency_warnings": [],
+  "analyzed_packages": [
+    {
+      "version": "10.0.0",
+      "source_version": "9.0.0",
+      "packages": [
+        {
+          "name": "@angular/animations",
+          "currentVersion": "9.1.13",
+          "targetVersion": "10.2.5",
+          "requiredBy": [
+            "root",
+            "@angular/material",
+            "@angular/platform-browser"
+          ],
+          "dependencyType": [
+            "root",
+            "peerDependency"
+          ],
+          "optional": false,
+          "angularDependent": true
+        },
+        {
+          "name": "@angular/cdk",
+          "currentVersion": "9.2.4",
+          "targetVersion": "10.2.7",
+          "requiredBy": [
+            "root",
+            "@angular/material"
+          ],
+          "dependencyType": [
+            "root",
+            "peerDependency"
+          ],
+          "optional": false,
+          "angularDependent": true
+        },
+        {
+          "name": "@angular/cli",
+          "currentVersion": "9.1.15",
+          "targetVersion": "10.2.4",
+          "requiredBy": [
+            "root"
+          ],
+          "dependencyType": [
+            "root"
+          ],
+          "optional": false,
+          "angularDependent": true
+        },
+        {
+          "name": "@angular/common",
+          "currentVersion": "9.1.13",
+          "targetVersion": "10.2.5",
+          "requiredBy": [
+            "root",
+            "@angular/cdk",
+            "@angular/forms",
+            "@angular/material",
+            "@angular/platform-browser",
+            "@angular/platform-browser-dynamic",
+            "@angular/router"
+          ],
+          "dependencyType": [
+            "root",
+            "peerDependency"
+          ],
+          "optional": false,
+          "angularDependent": true
+        },
+        {
+          "name": "@angular/compiler",
+          "currentVersion": "9.1.13",
+          "targetVersion": "10.2.5",
+          "requiredBy": [
+            "root",
+            "@angular/platform-browser-dynamic",
+            "@angular/compiler-cli"
+          ],
+          "dependencyType": [
+            "root",
+            "peerDependency"
+          ],
+          "optional": false,
+          "angularDependent": true
+        },
+        {
+          "name": "@angular/compiler-cli",
+          "currentVersion": "9.1.13",
+          "targetVersion": "10.2.5",
+          "requiredBy": [
+            "root"
+          ],
+          "dependencyType": [
+            "root"
+          ],
+          "optional": false,
+          "angularDependent": true
+        },
+        {
+          "name": "@angular/core",
+          "currentVersion": "9.1.13",
+          "targetVersion": "10.2.5",
+          "requiredBy": [
+            "root",
+            "@angular/animations",
+            "@angular/cdk",
+            "@angular/common",
+            "@angular/forms",
+            "@angular/material",
+            "@angular/platform-browser",
+            "@angular/platform-browser-dynamic",
+            "@angular/router"
+          ],
+          "dependencyType": [
+            "root",
+            "peerDependency"
+          ],
+          "optional": false,
+          "angularDependent": true
+        },
+        {
+          "name": "@angular/forms",
+          "currentVersion": "9.1.13",
+          "targetVersion": "10.2.5",
+          "requiredBy": [
+            "root",
+            "@angular/material"
+          ],
+          "dependencyType": [
+            "root",
+            "peerDependency"
+          ],
+          "optional": false,
+          "angularDependent": true
+        },
+        {
+          "name": "@angular/language-service",
+          "currentVersion": "9.1.13",
+          "targetVersion": "10.2.5",
+          "requiredBy": [
+            "root"
+          ],
+          "dependencyType": [
+            "root"
+          ],
+          "optional": false,
+          "angularDependent": true
+        },
+        {
+          "name": "@angular/material",
+          "currentVersion": "9.2.4",
+          "targetVersion": "10.2.7",
+          "requiredBy": [
+            "root"
+          ],
+          "dependencyType": [
+            "root"
+          ],
+          "optional": false,
+          "angularDependent": true
+        },
+        {
+          "name": "@angular/platform-browser",
+          "currentVersion": "9.1.13",
+          "targetVersion": "10.2.5",
+          "requiredBy": [
+            "root",
+            "@angular/forms",
+            "@angular/platform-browser-dynamic",
+            "@angular/router"
+          ],
+          "dependencyType": [
+            "root",
+            "peerDependency"
+          ],
+          "optional": false,
+          "angularDependent": true
+        },
+        {
+          "name": "@angular/platform-browser-dynamic",
+          "currentVersion": "9.1.13",
+          "targetVersion": "10.2.5",
+          "requiredBy": [
+            "root"
+          ],
+          "dependencyType": [
+            "root"
+          ],
+          "optional": false,
+          "angularDependent": true
+        },
+        {
+          "name": "@angular/router",
+          "currentVersion": "9.1.13",
+          "targetVersion": "10.2.5",
+          "requiredBy": [
+            "root"
+          ],
+          "dependencyType": [
+            "root"
+          ],
+          "optional": false,
+          "angularDependent": true
+        },
+        {
+          "name": "@ngrx/effects",
+          "currentVersion": "9.2.1",
+          "targetVersion": "10.1.2",
+          "requiredBy": [
+            "root"
+          ],
+          "dependencyType": [
+            "root"
+          ],
+          "optional": false,
+          "angularDependent": true
+        },
+        {
+          "name": "@ngrx/schematics",
+          "currentVersion": "8.6.1",
+          "targetVersion": "20.1.0",
+          "requiredBy": [
+            "root"
+          ],
+          "dependencyType": [
+            "root"
+          ],
+          "optional": true,
+          "angularDependent": false
+        },
+        {
+          "name": "@ngrx/store",
+          "currentVersion": "9.2.1",
+          "targetVersion": "20.1.0",
+          "requiredBy": [
+            "root",
+            "@ngrx/store-devtools"
+          ],
+          "dependencyType": [
+            "root",
+            "peerDependency"
+          ],
+          "optional": false,
+          "angularDependent": true
+        },
+        {
+          "name": "@ngrx/store-devtools",
+          "currentVersion": "8.6.1",
+          "targetVersion": "20.1.0",
+          "requiredBy": [
+            "root"
+          ],
+          "dependencyType": [
+            "root"
+          ],
+          "optional": true,
+          "angularDependent": false
+        },
+        {
+          "name": "karma-coverage-istanbul-reporter",
+          "currentVersion": "2.1.1",
+          "targetVersion": "3.0.3",
+          "requiredBy": [
+            "root"
+          ],
+          "dependencyType": [
+            "root"
+          ],
+          "optional": true,
+          "angularDependent": false
+        },
+        {
+          "name": "karma-jasmine-html-reporter",
+          "currentVersion": "1.7.0",
+          "targetVersion": "2.1.0",
+          "requiredBy": [
+            "root"
+          ],
+          "dependencyType": [
+            "root"
+          ],
+          "optional": true,
+          "angularDependent": false
+        },
+        {
+          "name": "protractor",
+          "currentVersion": "5.4.4",
+          "targetVersion": "7.0.0",
+          "requiredBy": [
+            "root"
+          ],
+          "dependencyType": [
+            "root"
+          ],
+          "optional": true,
+          "angularDependent": false
+        },
+        {
+          "name": "ts-node",
+          "currentVersion": "7.0.1",
+          "targetVersion": "10.9.2",
+          "requiredBy": [
+            "root"
+          ],
+          "dependencyType": [
+            "root"
+          ],
+          "optional": true,
+          "angularDependent": false
+        },
+        {
+          "name": "tslib",
+          "currentVersion": "1.14.1",
+          "targetVersion": "2.8.1",
+          "requiredBy": [
+            "@angular/animations",
+            "@angular/cdk",
+            "@angular/common",
+            "@angular/compiler",
+            "@angular/core",
+            "@angular/forms",
+            "@angular/material",
+            "@angular/platform-browser",
+            "@angular/platform-browser-dynamic",
+            "@angular/router",
+            "@angular/compiler-cli",
+            "@ngrx/store-devtools"
+          ],
+          "dependencyType": [
+            "dependency"
+          ],
+          "optional": false
+        },
+        {
+          "name": "typescript",
+          "currentVersion": "3.7.7",
+          "targetVersion": "3.9.10",
+          "requiredBy": [
+            "root"
+          ],
+          "dependencyType": [
+            "root"
+          ],
+          "optional": true,
+          "angularDependent": false
+        }
+      ],
+      "total_count": 23
+    }
+  ]
+}

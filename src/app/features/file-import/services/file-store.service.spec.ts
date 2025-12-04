@@ -18,8 +18,8 @@ describe('FileStoreService', () => {
         provideMockStore({ initialState: FILE_MOCK.INITIAL_FILE_STORE })
       ]
     });
-    service = TestBed.get(FileStoreService);
-    store = TestBed.get(Store);
+    service = TestBed.inject(FileStoreService);
+    store = TestBed.inject(Store);
     spyOn(store, 'dispatch');
   });
 
@@ -52,7 +52,7 @@ describe('FileStoreService', () => {
   });
 
   it('readFile', () => {
-    const file = (FILE_MOCK.EVENT.target as unknown) as DataTransfer;
+    const file = FILE_MOCK.EVENT.target as DataTransfer;
     service.readFile(file);
     expect(store.dispatch).toHaveBeenCalledWith(
       FileStore.readFile({
